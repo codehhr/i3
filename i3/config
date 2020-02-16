@@ -9,6 +9,7 @@ new_window 1pixel
 
 gaps inner 6
 
+exec_always ~/.config/polybar/bar_1.sh
 exec_always compton
 exec_always variety
 exec_always fcitx
