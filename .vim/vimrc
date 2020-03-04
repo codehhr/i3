@@ -1,0 +1,20 @@
+set number
+
+set mouse=a
+
+syntax on
+colo skeletor
+
+set clipboard=unnamed
+
+set nobackup
+set noswapfile
+
+set cursorline
+
+set autoindent
+
+set tabstop=4
+
+set hlsearch
+set incsearch
