@@ -5,8 +5,8 @@
 
 ## 效果如图:
 
-![vim](https://user_hhr.gitee.io/pictures/i3/vimshot1.png)
-
 ![vim](https://user_hhr.gitee.io/pictures/i3/vimshot2.png)
+
+![vim](https://user_hhr.gitee.io/pictures/i3/vimshot1.png)
 
 ![vim](https://user_hhr.gitee.io/pictures/i3/vimshot3.png)
