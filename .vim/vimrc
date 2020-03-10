@@ -2,19 +2,32 @@ set number
 
 set mouse=a
 
+syntax enable
 syntax on
+
+"主题颜色设定
 colo skeletor
 
 set clipboard=unnamed
 
 set nobackup
+set nowritebackup
 set noswapfile
 
 set cursorline
 
 set autoindent
 
+"四字符缩进
+set shiftwidth=4
+set softtabstop=4
 set tabstop=4
+set noexpandtab
 
+"搜索高亮
 set hlsearch
 set incsearch
+
+"编码设定Encoding
+set fileencoding=utf-8
+set fileencodings=utf-8,gbk,utf-16,big5
