@@ -181,27 +181,26 @@ font:
 colors:
   # Default colors
   primary:
-    background: "#27292c"
-    foreground: "#d0d2d1"
+    background: "#696969"
+    foreground: "#FFFFF0"
 
   # Normal colors
   normal:
     black: "#35383b"
     red: "#b05655"
-    green: "#769972"
+    green: "#99ddff"
     yellow: "#e1a574"
     blue: "#7693ac"
     magenta: "#977ba0"
     cyan: "#749e99"
     white: "#848b92"
-
   # Bright colors
   bright:
     black: "#484c52"
     red: "#d27c7b"
     green: "#dffebe"
     yellow: "#f0d189"
-    blue: "#96b1c9"
+    blue: "#99ddff"
     magenta: "#bfa5c7"
     cyan: "#9fc9c3"
     white: "#fcf7e2"
@@ -246,7 +245,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.4
+background_opacity: 0.5
 #selection:
 #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
