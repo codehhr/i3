@@ -177,33 +177,34 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Hybrid)
+# Colors (Snazzy)
 colors:
   # Default colors
   primary:
-    background: "#696969"
-    foreground: "#FFFFF0"
+    background: "#282a36"
+    foreground: "#eff0eb"
 
   # Normal colors
   normal:
-    black: "#35383b"
-    red: "#b05655"
-    green: "#99ddff"
-    yellow: "#e1a574"
-    blue: "#7693ac"
-    magenta: "#977ba0"
-    cyan: "#749e99"
-    white: "#848b92"
+    black: "#282a36"
+    red: "#ff5c57"
+    green: "#ffffaf"
+    yellow: "#f3f99d"
+    blue: "#57c7ff"
+    magenta: "#ff6ac1"
+    cyan: "#9aedfe"
+    white: "#f1f1f0"
+
   # Bright colors
   bright:
-    black: "#484c52"
-    red: "#d27c7b"
-    green: "#dffebe"
-    yellow: "#f0d189"
-    blue: "#99ddff"
-    magenta: "#bfa5c7"
-    cyan: "#9fc9c3"
-    white: "#fcf7e2"
+    black: "#686868"
+    red: "#ff5c57"
+    green: "#5af78e"
+    yellow: "#f3f99d"
+    blue: "#57c7ff"
+    magenta: "#ff6ac1"
+    cyan: "#9aedfe"
+    white: "#f1f1f0"
 
 # Indexed Colors
 #
