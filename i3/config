@@ -13,6 +13,7 @@ exec_always ~/.config/polybar/bar_1.sh
 exec_always compton
 exec_always variety
 exec_always fcitx
+exec_always /usr/lib/gsd-xsettings&
 
 # i3 config file (v4)
 #
@@ -22,7 +23,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 9
+font pango:monospace 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -53,7 +54,8 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 bindsym ctrl+shift+m exec chromium
 bindsym ctrl+shift+u exec netease-cloud-music
-
+bindsym ctrl+shift+d exec dde-file-manager
+bindsym $mod+o exec --no-startup-id rofi -show drun
 # kill focused window
 bindsym ctrl+Shift+w kill
 
