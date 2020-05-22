@@ -7,7 +7,7 @@
 
 new_window 1pixel
 
-gaps inner 6
+gaps inner 10
 
 exec_always ~/.config/polybar/bar_1.sh
 exec_always compton
@@ -54,7 +54,7 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 bindsym ctrl+shift+m exec chromium
 bindsym ctrl+shift+u exec netease-cloud-music
-bindsym ctrl+shift+d exec dde-file-manager
+bindsym ctrl+shift+d exec dolphin
 bindsym $mod+o exec --no-startup-id rofi -show drun
 # kill focused window
 bindsym ctrl+Shift+w kill
