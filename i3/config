@@ -13,6 +13,7 @@ exec_always ~/.config/polybar/bar_1.sh
 exec_always compton
 exec_always variety
 exec_always fcitx
+# sudo pacman -S cinnamon-settings-daemon 用于kde,i3桌面启动QQ
 exec_always /usr/lib/cinnamon-settings-daemon/csd-xsettings&
 
 # i3 config file (v4)
