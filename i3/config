@@ -56,6 +56,7 @@ bindsym $mod+Return exec alacritty
 bindsym ctrl+shift+m exec chromium
 bindsym ctrl+shift+u exec netease-cloud-music
 bindsym ctrl+shift+d exec dolphin
+bindsym ctrl+shift+k exec systemsettings5
 bindsym $mod+o exec --no-startup-id rofi -show run
 # kill focused window
 bindsym ctrl+Shift+w kill
