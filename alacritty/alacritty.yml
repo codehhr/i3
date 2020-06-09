@@ -189,6 +189,7 @@ colors:
     black: "#282a36"
     red: "#ff5c57"
     green: "#ffffaf"
+    #green: "#ffbbff"
     yellow: "#f3f99d"
     blue: "#57c7ff"
     magenta: "#ff6ac1"
