@@ -2,4 +2,4 @@
 
 ### 效果图
 
-![i3shot](https://user_hhr.gitee.io/pictures/i3/i3shot.png)
+![i3](https://ftp.bmp.ovh/imgs/2020/06/6b68e32feb6b3aad.png)
