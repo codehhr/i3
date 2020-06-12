@@ -31,11 +31,11 @@ alert = #bd2c40
 [bar/bar_1]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 20
+height = 18
 ;offset-x = 1%
 ;offset-y = 1%
 
-fixed-center = false
+;fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -44,6 +44,8 @@ line-size = 2
 line-color = #f00
 
 border-size = 0
+border-top = 1
+border-left = 0
 border-color = #00000000
 
 padding-left = 1
@@ -61,7 +63,7 @@ modules-center = mpd
 modules-right = filesystem alsa xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
-tray-padding = 2
+tray-padding = 4
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
