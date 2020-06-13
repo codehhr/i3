@@ -52,13 +52,14 @@ exec --no-startup-id nm-applet
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec alacritty
-bindsym $mod+Return exec st
+bindsym $mod+Return exec alacritty
+#bindsym $mod+Return exec st
 bindsym ctrl+shift+m exec chromium
 bindsym $mod+p exec /opt/deepinwine/apps/Deepin-QQ/run.sh
 bindsym ctrl+shift+l exec --no-startup-id i3lock-fancy
 bindsym ctrl+shift+u exec netease-cloud-music
 bindsym ctrl+shift+d exec dolphin
+bindsym $mod+shift+s exec flameshot
 bindsym ctrl+shift+k exec systemsettings5
 bindsym $mod+o exec --no-startup-id rofi -show run
 # kill focused window
