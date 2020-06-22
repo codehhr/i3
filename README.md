@@ -2,4 +2,4 @@
 
 ### 效果图
 
-![i3](https://ftp.bmp.ovh/imgs/2020/06/6b68e32feb6b3aad.png)
+![i3](https://codehhr.gitee.io/pictures/i3/i3.png)
