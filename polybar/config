@@ -21,6 +21,7 @@
 ;background = ${xrdb:color0:#222}
 background = #88000000
 background-alt = #444
+i3numbg  = #dda0dd
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #d2b48c
@@ -45,14 +46,14 @@ line-size = 2
 line-color = #f00
 
 border-size = 0
-border-top = 2
+border-top = 4
 border-left = 4
 border-color = #00000000
 
 padding-left = 1
 padding-right = 2
 
-module-margin-left = 2
+module-margin-left = 3
 module-margin-right = 2
 
 font-0 = ttf-liberation-sans:fixed:pixelsize=12;1
@@ -95,10 +96,10 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
+;format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
-label-layout-underline = ${colors.secondary}
+;label-layout-underline = ${colors.secondary}
 
 
 [module/filesystem]
@@ -148,8 +149,9 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused-background = ${colors.i3numbg}
+label-focused-foreground = #000000
+;label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
@@ -159,7 +161,7 @@ label-unfocused-padding = 2
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
 label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
+;label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
@@ -217,7 +219,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #aaaaff
+;format-underline = #aaaaff
 label = %percentage:2%%
 
 [module/memory]
@@ -225,7 +227,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+;format-underline = #4bffdc
 label = %percentage_used%%
 
 [module/wlan]
@@ -234,7 +236,7 @@ interface = wlp3s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #4bffdc
+;format-connected-underline = #4bffdc
 label-connected = %essid%
 
 format-disconnected = 
@@ -277,7 +279,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #aa94ff
+;format-underline = #aa94ff
 label = %date% %time%
 
 [module/pulseaudio]
@@ -343,14 +345,14 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+;format-charging-underline = #ffb52a
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
+;format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
 ;format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+;format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -371,9 +373,9 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #76EEC6
+;format-underline = #76EEC6
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+;format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
