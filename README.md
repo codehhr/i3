@@ -4,4 +4,4 @@
 
 ### 效果图
 
-![i3](https://imgchr.com/i/NdJObD)
+![i3](https://s1.ax1x.com/2020/06/24/NdJObD.png)
