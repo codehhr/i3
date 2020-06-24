@@ -6,10 +6,10 @@
 #
 
 new_window 1pixel
-
+smart_borders on
 gaps inner 4
 
-exec_always ~/.config/polybar/bar_1.sh
+exec_always --no-startup-id ~/.config/polybar/bar1.sh
 exec_always picom -b
 exec_always variety
 exec_always fcitx
@@ -52,8 +52,8 @@ exec --no-startup-id nm-applet
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-#bindsym $mod+Return exec st
+#bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec st
 bindsym ctrl+shift+m exec chromium
 bindsym $mod+p exec /opt/deepinwine/apps/Deepin-QQ/run.sh
 bindsym ctrl+shift+l exec --no-startup-id i3lock-fancy
@@ -195,11 +195,10 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar {
+#bar {
 #	colors {
 #	background #494f5c
-# }
-#	# position top
+#}
 #	position bottom
-#       status_command i3status
-# }
+#    status_command i3status
+#}

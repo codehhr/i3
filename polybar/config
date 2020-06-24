@@ -28,7 +28,7 @@ primary = #ffb52a
 secondary = #daaaff
 alert = #bd2c40
 
-[bar/bar_1]
+[bar/bar1]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 18
@@ -59,7 +59,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=12;1
 
 modules-left = bspwm i3
-modules-center = mpd
+modules-center = xwindow
 modules-right = filesystem alsa xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
@@ -216,7 +216,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "Mem "
+format-prefix = "RAM "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
