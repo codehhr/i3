@@ -31,3 +31,5 @@ set incsearch
 "编码设定Encoding
 set fileencoding=utf-8
 set fileencodings=utf-8,gbk,utf-16,big5
+
+set scrolloff=8
