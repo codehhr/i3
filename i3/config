@@ -65,8 +65,8 @@ exec --no-startup-id nm-applet
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec alacritty
 bindsym $mod+Return exec st
+bindsym $mod+shift+Return exec alacritty
 
 #用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
@@ -111,7 +111,7 @@ bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+b exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
