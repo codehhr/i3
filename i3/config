@@ -70,6 +70,7 @@ bindsym $mod+Return exec st
 
 #用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
+bindsym $mod+shift+n exec st -e sudo ranger
 
 #chromium浏览器
 bindsym ctrl+shift+m exec --no-startup-id chromium
