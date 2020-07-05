@@ -21,7 +21,7 @@
 ;background = ${xrdb:color0:#222}
 background = #88000000
 background-alt = #444
-i3numbg  = #F3E2A9
+i3numbg  = #dda0dd
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #d2b48c
@@ -35,7 +35,7 @@ width = 99.6%
 height = 18
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 6.0
+radius = 8.0
 fixed-center = true
 
 
@@ -87,7 +87,7 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label-margin-left = 160
+label-margin-left = 100
 label = T i t l e  |    %title:0:30:...%
 
 [module/xkeyboard]
