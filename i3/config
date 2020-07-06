@@ -4,16 +4,31 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-
+#去掉顶部边框
 new_window 1pixel
-smart_borders on
-gaps inner 4
-#gaps outer 14
 
-exec_always --no-startup-id ~/.config/polybar/bar1.sh
+# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
+smart_borders on
+
+#窗口间缝隙
+gaps inner 4
+
+#窗口外边距
+gaps outer 10
+
+#启动polybar脚本，要提前'chmod+x'
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+#窗口渲染器
 exec_always picom -b
+
+#壁纸
 exec_always variety
+
+#中文输入法
 exec_always fcitx
+
 # sudo pacman -S gnome-settings-daemon 用于kde,i3桌面启动QQ
 exec_always /usr/lib/gsd-xsettings &
 
@@ -21,6 +36,7 @@ exec_always /usr/lib/gsd-xsettings &
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+#设置mod为Win键
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -53,28 +69,53 @@ exec --no-startup-id nm-applet
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec alacritty
 bindsym $mod+Return exec st
-bindsym ctrl+shift+m exec chromium
-bindsym $mod+p exec /opt/deepinwine/apps/Deepin-QQ/run.sh
+bindsym $mod+shift+Return exec alacritty
+
+#用st启动ranger文件管理器
+bindsym $mod+n exec st -e ranger
+bindsym $mod+shift+n exec st -e sudo ranger
+
+#chromium浏览器
+bindsym ctrl+shift+m exec --no-startup-id chromium
+
+#deepin-QQ
+bindsym $mod+p exec --no-startup-id /opt/deepinwine/apps/Deepin-QQ/run.sh
+
+#i3锁屏
 bindsym ctrl+shift+l exec --no-startup-id i3lock-fancy
-bindsym ctrl+shift+u exec netease-cloud-music
-bindsym ctrl+shift+d exec dolphin
-bindsym $mod+shift+s exec flameshot
-bindsym $mod+ctrl+r exec simplescreenrecorder
-bindsym ctrl+shift+k exec systemsettings5
+
+#网易云音乐
+bindsym ctrl+shift+u exec --no-startup-id netease-cloud-music
+
+#KDE的文件管理器，挺好用
+bindsym ctrl+shift+d exec --no-startup-id dolphin
+
+#截图软件
+bindsym $mod+shift+s exec --no-startup-id flameshot
+
+#录屏软件
+bindsym $mod+ctrl+r exec --no-startup-id simplescreenrecorder
+
+#KDE系统设置，因为我预装的KDE
+bindsym ctrl+shift+k exec --no-startup-id systemsettings5
+
+#类似于dmenu的一个东西
 bindsym $mod+o exec --no-startup-id rofi -show run
+
 # kill focused window
 bindsym ctrl+Shift+w kill
 
+#把网易云默认安排到第四个桌面
 assign [class="netease-cloud-music"] $ws4
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+b exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
