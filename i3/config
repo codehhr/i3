@@ -5,14 +5,14 @@
 # this file and re-run i3-config-wizard(1).
 #
 #窗口边框
-new_window pixel 2
+new_window pixel 3
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 
 #窗口间缝隙
-gaps inner 4
+gaps inner 2
 
 #窗口外边距
 gaps outer 10
@@ -38,6 +38,9 @@ exec_always /usr/lib/gsd-xsettings &
 
 #设置mod为Win键
 set $mod Mod4
+
+#设置mod1为alt键
+set $mod1 Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -69,8 +72,9 @@ exec --no-startup-id nm-applet
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
-bindsym $mod+shift+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id st
+bindsym $mod1+Return exec --no-startup-id alacritty
+for_window [class="alacritty"] floating enable resize set 960 580,move right -20px,move down -40px
 
 #用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
@@ -219,16 +223,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 20 px or 20 ppt
+        bindsym k resize grow height 20 px or 20 ppt
+        bindsym l resize shrink height 20 px or 20 ppt
+        bindsym semicolon resize grow width 20 px or 20 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 20 px or 20 ppt
+        bindsym Down resize grow height 20 px or 20 ppt
+        bindsym Up resize shrink height 20 px or 20 ppt
+        bindsym Right resize grow width 20 px or 20 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
