@@ -93,7 +93,7 @@ bindsym $mod1+l exec --no-startup-id i3lock-fancy
 bindsym ctrl+shift+u exec --no-startup-id netease-cloud-music
 
 #KDE的文件管理器，挺好用
-bindsym ctrl+shift+d exec --no-startup-id dolphin
+bindsym $mod+shift+d exec --no-startup-id dolphin
 
 #截图软件
 bindsym $mod+shift+s exec --no-startup-id flameshot
