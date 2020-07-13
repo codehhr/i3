@@ -15,7 +15,7 @@ smart_borders on
 gaps inner 2
 
 #窗口外边距
-gaps outer 10
+gaps outer 50
 
 #启动polybar脚本，要提前'chmod+x'
 exec_always --no-startup-id ~/.config/polybar/launch.sh
