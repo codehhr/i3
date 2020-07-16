@@ -87,7 +87,8 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label-margin-left = 100
+#label-margin-left = 50%
+label-padding-left = 68%
 label = T i t l e  |    %title:0:30:...%
 
 [module/xkeyboard]
