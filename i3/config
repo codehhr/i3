@@ -84,7 +84,7 @@ bindsym $mod+shift+n exec st -e sudo ranger
 bindsym ctrl+shift+m exec --no-startup-id chromium
 
 #deepin-QQ
-bindsym $mod+p exec --no-startup-id /opt/deepinwine/apps/Deepin-QQ/run.sh
+bindsym $mod+p exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
 
 #i3锁屏
 bindsym $mod1+l exec --no-startup-id i3lock-fancy
