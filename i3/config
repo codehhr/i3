@@ -87,7 +87,7 @@ bindsym ctrl+shift+m exec --no-startup-id chromium
 bindsym $mod+p exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
 
 #i3锁屏
-bindsym $mod1+l exec --no-startup-id i3lock-fancy
+bindsym ctrl+$mod1+l exec --no-startup-id i3lock-fancy
 
 #网易云音乐
 bindsym ctrl+shift+u exec --no-startup-id netease-cloud-music
