@@ -15,7 +15,7 @@ new_window pixel 3
 gaps inner 2
 
 #窗口外边距
-gaps outer 50
+gaps outer 46
 
 #启动polybar脚本，要提前'chmod+x'
 exec_always --no-startup-id ~/.config/polybar/launch.sh
