@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "WenQuanYi Micro Hei Mono:pixelsize=22:antialias=true:autohint=true";
+static char *font = "WenQuanYi Micro Hei Mono:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 4;
 
 /*
