@@ -107,8 +107,8 @@ bindsym ctrl+shift+k exec --no-startup-id systemsettings5
 #类似于dmenu的一个东西
 bindsym $mod+o exec --no-startup-id rofi -show run
 
-# kill focused window(感觉用alt+q非常快)
-bindsym $mod1+q kill
+# kill focused window
+bindsym $mod+q kill
 
 #把网易云默认安排到第四个桌面
 assign [class="netease-cloud-music"] $ws4
