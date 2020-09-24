@@ -24,13 +24,13 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom -b
 
 #壁纸
-exec_always variety
+exec_always --no-startup-id variety
 
 #中文输入法
-exec_always fcitx
+exec_always --no-startup-id fcitx
 
 # sudo pacman -S gnome-settings-daemon 用于kde,i3桌面启动QQ
-exec_always /usr/lib/gsd-xsettings &
+exec_always --no-startup-id /usr/lib/gsd-xsettings &
 
 # i3 config file (v4)
 #
@@ -74,11 +74,16 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec --no-startup-id st
 bindsym $mod1+Return exec --no-startup-id alacritty
-for_window [class="alacritty"] floating enable resize set 960 580,move right -20px,move down -40px
+for_window [class="st"] floating enable resize set 960 580,move right -20px,move down -40px
 
 #用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
 bindsym $mod+shift+n exec st -e sudo ranger
+
+#用alacritty启动ranger文件管理器
+bindsym $mod1+n exec alacritty -e ranger
+bindsym $mod1+shift+n exec alacritty -e sudo ranger
+
 
 #chromium浏览器
 bindsym ctrl+shift+m exec --no-startup-id chromium
@@ -95,8 +100,10 @@ bindsym ctrl+shift+u exec --no-startup-id netease-cloud-music
 #KDE的文件管理器，挺好用
 bindsym $mod+shift+d exec --no-startup-id dolphin
 
-#截图软件
-bindsym $mod+shift+s exec --no-startup-id flameshot
+#截图
+bindsym $mod+shift+s exec --no-startup-id flameshot gui
+
+#bindsym $mod+shift+s --release exec /usr/bin/flameshot gui
 
 #录屏软件
 bindsym $mod+ctrl+r exec --no-startup-id simplescreenrecorder
@@ -114,7 +121,7 @@ bindsym $mod+q kill
 assign [class="netease-cloud-music"] $ws4
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -213,9 +220,9 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+Shift+e exec "i3-msg exit"
+bindsym $mod1+Shift+e exec "i3-msg exit"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
