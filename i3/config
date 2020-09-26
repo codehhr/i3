@@ -21,7 +21,7 @@ gaps outer 40
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 #窗口渲染器
-exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom --backend xrender
 
 #壁纸
 exec_always --no-startup-id variety
@@ -74,7 +74,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec --no-startup-id st
 bindsym $mod1+Return exec --no-startup-id alacritty
-for_window [class="st"] floating enable resize set 960 580,move right -20px,move down -40px
+# for_window [class="st"] floating enable resize set 960 580,move right -20px,move down -40px
 
 #用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
