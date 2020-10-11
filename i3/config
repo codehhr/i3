@@ -21,7 +21,8 @@ gaps outer 40
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 #窗口渲染器
-exec_always --no-startup-id picom --backend xrender
+exec_always --no-startup-id picom -b
+#exec_always --no-startup-id xcompmgr &
 
 #壁纸
 exec_always --no-startup-id variety
