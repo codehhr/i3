@@ -29,10 +29,10 @@ primary = #ffb52a
 secondary = #daaaff
 alert = #bd2c40
 
-[bar/bar1]
+[bar/barA]
 monitor = ${env:MONITOR:eDP-1}
 width = 99.6%
-height = 18
+height = 20
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 6.0
