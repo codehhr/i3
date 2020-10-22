@@ -2,6 +2,8 @@ set number
 
 set mouse=a
 
+set scrolloff=5
+
 syntax enable
 syntax on
 
