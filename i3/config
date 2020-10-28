@@ -15,7 +15,7 @@ smart_borders on
 gaps inner 2
 
 #窗口外边距
-gaps outer 40
+gaps outer 20
 
 #启动polybar脚本，要提前'chmod+x'
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -75,7 +75,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec --no-startup-id st
 bindsym $mod1+Return exec --no-startup-id alacritty
-# for_window [class="st"] floating enable resize set 960 580,move right -20px,move down -40px
+for_window [class="st"] floating enable resize set 1680 700,move right -350px,move down -50px
 
 #用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
