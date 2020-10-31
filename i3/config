@@ -75,7 +75,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec --no-startup-id st
 bindsym $mod1+Return exec --no-startup-id alacritty
-for_window [class="st"] floating enable resize set 1680 700,move right -350px,move down -50px
+for_window [class="st"] floating enable resize set 1680 700,move right -360px,move down -50px
 
 #用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
