@@ -173,8 +173,8 @@ static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
 	{ XK_NO_MOD,            Button4, kscrollup,      {.i = 1} },
 	{ XK_NO_MOD,            Button5, kscrolldown,    {.i = 1} },
-	{ ControlMask,            Button4, kscrollup,      {.i = -1} },
-	{ ControlMask,            Button5, kscrolldown,    {.i = -1} },
+	{ ControlMask,          Button4, kscrollup,      {.i = -1} },
+	{ ControlMask,          Button5, kscrolldown,    {.i = -1} },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 //	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 //	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
@@ -189,21 +189,20 @@ static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ AltMask,              XK_c,           normalMode,     {.i =  0} },
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
-	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
-	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
+	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} }, 
+	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} }, 
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
+	{ ControlMask,          XK_u,           zoom,           {.f = +1} }, // ctrl+u    zoom+1
+	{ ControlMask,          XK_j,           zoom,           {.f = -1} }, // ctrl+j    zoom-1
+	{ ControlMask,          XK_0,           zoomreset,      {.f =  0} }, // ctrl+0    zoomreset
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
-	{ TERMMOD,              XK_P,           selpaste,       {.i =  0} },
-	{ AltMask,              XK_j,           kscrolldown,    {.i =  1} },
-	{ AltMask,              XK_u,           kscrollup,      {.i =  1} },
-	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
+    { AltMask,              XK_j,           kscrolldown,    {.i =  1} }, // alt+j    scrolldown
+    { AltMask,              XK_u,           kscrollup,      {.i =  1} }, // alt+u    scrollup
+    { ControlMask|AltMask,  XK_j,           kscrolldown,    {.i = -1} }, // ctrl+alt+j    scrollPageDown
+    { ControlMask|AltMask,  XK_u,           kscrollup,      {.i = -1} }, // ctrl+alt+u    scrollPageUp
+	{ ShiftMask,            XK_p,           selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*
