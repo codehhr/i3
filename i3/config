@@ -9,7 +9,7 @@ new_window pixel 2
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+# smart_borders on
 
 #窗口间缝隙
 gaps inner 2
@@ -98,6 +98,9 @@ bindsym ctrl+$mod1+l exec --no-startup-id i3lock-fancy
 #网易云音乐
 bindsym ctrl+shift+u exec --no-startup-id netease-cloud-music
 
+#把网易云默认安排到第四个桌面
+assign [class="netease-cloud-music"] $ws4
+
 #KDE的文件管理器，挺好用
 bindsym $mod+shift+d exec --no-startup-id dolphin
 
@@ -117,9 +120,6 @@ bindsym $mod+o exec --no-startup-id rofi -show run
 
 # kill focused window
 bindsym $mod+q kill
-
-#把网易云默认安排到第四个桌面
-assign [class="netease-cloud-music"] $ws4
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
@@ -233,16 +233,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 20 px or 20 ppt
-        bindsym k resize grow height 20 px or 20 ppt
-        bindsym l resize shrink height 20 px or 20 ppt
-        bindsym semicolon resize grow width 20 px or 20 ppt
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 20 px or 20 ppt
-        bindsym Down resize grow height 20 px or 20 ppt
-        bindsym Up resize shrink height 20 px or 20 ppt
-        bindsym Right resize grow width 20 px or 20 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -251,6 +251,49 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+
+
+# i3-gaps
+for_window [class="^.*"] border pixel 2
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+bindsym $mod+Shift+i mode "$mode_gaps_inner"
+bindsym $mod+Shift+o mode "$mode_gaps_outer"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 8
+        bindsym minus gaps inner current minus 8
+        bindsym 0     gaps inner current set 2
+
+        bindsym Shift+plus  gaps inner all plus 8
+        bindsym Shift+minus gaps inner all minus 8
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 8
+        bindsym minus gaps outer current minus 8
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 8
+        bindsym Shift+minus gaps outer all minus 8
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
