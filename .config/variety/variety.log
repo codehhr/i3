@@ -1,0 +1,453 @@
+INFO: 2020-12-15 13:25:31,047: main() 'Using profile folder /home/user/.config/variety/'
+INFO: 2020-12-15 13:25:31,082: makedirs() 'Creating folder /home/user/.config/variety/plugins'
+INFO: 2020-12-15 13:25:31,084: perform_upgrade() 'Last run version was 0.4.12 or earlier, current version is 0.8.4'
+INFO: 2020-12-15 13:25:31,568: perform_upgrade() 'Performing upgrade to 0.4.13'
+INFO: 2020-12-15 13:25:31,591: perform_upgrade() 'Writing .variety_download_folder to current download folder /home/user/.config/variety/Downloaded'
+INFO: 2020-12-15 13:25:31,592: makedirs() 'Creating folder /home/user/.config/variety/Downloaded'
+INFO: 2020-12-15 13:25:31,592: perform_upgrade() 'Performing upgrade to 0.4.14'
+INFO: 2020-12-15 13:25:31,592: perform_upgrade() 'Performing upgrade to 0.8.0'
+INFO: 2020-12-15 13:25:31,599: perform_upgrade() 'Performing upgrade to 0.8.2'
+INFO: 2020-12-15 13:25:31,606: perform_upgrade() 'Performing upgrade to 0.8.3'
+INFO: 2020-12-15 13:25:31,610: write_current_version() 'Writing current version 0.8.4 to .version'
+INFO: 2020-12-15 13:25:31,612: process_command() 'Received command: ['-p']'
+INFO: 2020-12-15 13:25:31,614: load_banned() 'Missing or invalid banned URLs list, no URLs will be banned'
+INFO: 2020-12-15 13:25:31,627: start() 'Using data_path /usr/share/variety'
+INFO: 2020-12-15 13:25:31,628: load() 'Jumble loading'
+INFO: 2020-12-15 13:25:31,637: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.8/site-packages/variety/plugins/builtin/__init__.py'
+INFO: 2020-12-15 13:25:31,643: _walk_modules() 'Jumble loading module in UrbanDictionarySource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/UrbanDictionarySource.py'
+INFO: 2020-12-15 13:25:31,645: load() 'Jumble found plugin class: <class 'UrbanDictionarySource.UrbanDictionarySource'>: {'name': 'Urban Dictionary', 'description': 'Displays definitions from Urban Dictionary', 'author': 'James Miller', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,645: _walk_modules() 'Jumble loading module in LocalFilesSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/LocalFilesSource.py'
+INFO: 2020-12-15 13:25:31,646: load() 'Jumble found plugin class: <class 'LocalFilesSource.LocalFilesSource'>: {'name': 'Local text files', 'description': 'Displays quotes, defined in local text files.\nPut your own txt files in: ~/.config/variety/pluginconfig/quotes/.\nThe file format is:\n\nquote -- author\n.\nsecond quote -- another author\n.\netc...\n\nExample: http://rvelthuis.de/zips/quotes.txt', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,647: _walk_modules() 'Jumble loading module in QuotationsPageSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/QuotationsPageSource.py'
+INFO: 2020-12-15 13:25:31,681: load() 'Jumble found plugin class: <class 'QuotationsPageSource.QuotationsPageSource'>: {'name': 'TheQuotationsPage.com', 'description': 'Fetches quotes from TheQuotationsPage.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,682: _walk_modules() 'Jumble loading module in GoodreadsSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/GoodreadsSource.py'
+INFO: 2020-12-15 13:25:31,683: load() 'Jumble found plugin class: <class 'GoodreadsSource.GoodreadsSource'>: {'name': 'Goodreads', 'description': 'Fetches quotes from Goodreads.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,684: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/__init__.py'
+INFO: 2020-12-15 13:25:31,686: _walk_modules() 'Jumble loading module in FortuneSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/quotes/FortuneSource.py'
+INFO: 2020-12-15 13:25:31,687: load() 'Jumble found plugin class: <class 'FortuneSource.FortuneSource'>: {'name': 'UNIX fortune program', 'description': 'Displays quotes using the UNIX fortune program. You may want to install additional fortune packs, e.g. fortunes-bofh-excuses.', 'author': 'Dan Jones', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,689: _walk_modules() 'Jumble loading module in MediaRSSSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/MediaRSSSource.py'
+INFO: 2020-12-15 13:25:31,695: load() 'Jumble found plugin class: <class 'MediaRSSSource.MediaRSSSource'>: {'name': 'MediaRSSSource', 'description': 'Configurable source for fetching images from MediaRSS feeds', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,696: _walk_modules() 'Jumble loading module in UnsplashDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/UnsplashDownloader.py'
+INFO: 2020-12-15 13:25:31,698: load() 'Jumble found plugin class: <class 'UnsplashDownloader.UnsplashDownloader'>: {'name': 'UnsplashDownloader', 'description': 'High-resolution photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,698: _walk_modules() 'Jumble loading module in UnsplashConfigurableSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/UnsplashConfigurableSource.py'
+INFO: 2020-12-15 13:25:31,701: load() 'Jumble found plugin class: <class 'UnsplashConfigurableSource.UnsplashConfigurableSource'>: {'name': 'UnsplashConfigurableSource', 'description': 'Configurable source for fetching photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,702: _walk_modules() 'Jumble loading module in EarthviewDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/EarthviewDownloader.py'
+INFO: 2020-12-15 13:25:31,703: load() 'Jumble found plugin class: <class 'EarthviewDownloader.EarthviewDownloader'>: {'name': 'EarthviewDownloader', 'description': 'Google Earth View Wallpapers', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,703: _walk_modules() 'Jumble loading module in APODDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/APODDownloader.py'
+INFO: 2020-12-15 13:25:31,705: load() 'Jumble found plugin class: <class 'APODDownloader.APODDownloader'>: {'name': 'APODDownloader', 'description': 'NASA Astro Pic of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,707: _walk_modules() 'Jumble loading module in BingDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/BingDownloader.py'
+INFO: 2020-12-15 13:25:31,708: load() 'Jumble found plugin class: <class 'BingDownloader.BingDownloader'>: {'name': 'BingDownloader', 'description': 'Bing Photo of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,709: _walk_modules() 'Jumble loading module in RedditSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/RedditSource.py'
+INFO: 2020-12-15 13:25:31,710: load() 'Jumble found plugin class: <class 'RedditSource.RedditSource'>: {'name': 'RedditSource', 'description': 'Configurable source for fetching images from Reddit', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,710: _walk_modules() 'Jumble loading module in WallhavenSource from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/WallhavenSource.py'
+INFO: 2020-12-15 13:25:31,712: load() 'Jumble found plugin class: <class 'WallhavenSource.WallhavenSource'>: {'name': 'WallhavenSource', 'description': 'Configurable source for fetching images from Wallhaven.cc', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2020-12-15 13:25:31,712: _walk_modules() 'Jumble loading module in RedditDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/RedditDownloader.py'
+INFO: 2020-12-15 13:25:31,713: _walk_modules() 'Jumble loading module in MediaRSSDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/MediaRSSDownloader.py'
+INFO: 2020-12-15 13:25:31,713: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/__init__.py'
+INFO: 2020-12-15 13:25:31,714: _walk_modules() 'Jumble loading module in WallhavenDownloader from /usr/lib/python3.8/site-packages/variety/plugins/builtin/downloaders/WallhavenDownloader.py'
+INFO: 2020-12-15 13:25:31,715: makedirs() 'Creating folder /home/user/.config/variety/pluginconfig/downloaders'
+INFO: 2020-12-15 13:25:31,718: makedirs() 'Creating folder /home/user/.config/variety/Favorites'
+INFO: 2020-12-15 13:25:31,718: makedirs() 'Creating folder /home/user/.config/variety/Fetched'
+INFO: 2020-12-15 13:25:31,719: log_options() 'Loaded options:'
+INFO: 2020-12-15 13:25:31,719: log_options() 'change_enabled = False'
+INFO: 2020-12-15 13:25:31,719: log_options() 'change_interval = 300'
+INFO: 2020-12-15 13:25:31,719: log_options() 'change_on_start = False'
+INFO: 2020-12-15 13:25:31,719: log_options() 'clipboard_enabled = False'
+INFO: 2020-12-15 13:25:31,719: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2020-12-15 13:25:31,719: log_options() 'clipboard_use_whitelist = True'
+INFO: 2020-12-15 13:25:31,719: log_options() 'clock_date_font = Ubuntu Condensed, 30'
+INFO: 2020-12-15 13:25:31,719: log_options() 'clock_enabled = False'
+INFO: 2020-12-15 13:25:31,719: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2020-12-15 13:25:31,719: log_options() 'clock_font = Ubuntu Condensed, 70'
+INFO: 2020-12-15 13:25:31,719: log_options() 'configfile = /home/user/.config/variety/variety.conf'
+INFO: 2020-12-15 13:25:31,719: log_options() 'copyto_enabled = False'
+INFO: 2020-12-15 13:25:31,719: log_options() 'copyto_folder = Default'
+INFO: 2020-12-15 13:25:31,719: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2020-12-15 13:25:31,719: log_options() 'desired_color_enabled = False'
+INFO: 2020-12-15 13:25:31,719: log_options() 'download_folder = /home/user/.config/variety/Downloaded'
+INFO: 2020-12-15 13:25:31,719: log_options() 'download_preference_ratio = 0.9'
+INFO: 2020-12-15 13:25:31,719: log_options() 'favorites_folder = /home/user/.config/variety/Favorites'
+INFO: 2020-12-15 13:25:31,719: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2020-12-15 13:25:31,719: log_options() 'fetched_folder = /home/user/.config/variety/Fetched'
+INFO: 2020-12-15 13:25:31,719: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2020-12-15 13:25:31,719: log_options() 'icon = Light'
+INFO: 2020-12-15 13:25:31,719: log_options() 'lightness_enabled = False'
+INFO: 2020-12-15 13:25:31,719: log_options() 'lightness_mode = 0'
+INFO: 2020-12-15 13:25:31,719: log_options() 'min_rating = 4'
+INFO: 2020-12-15 13:25:31,719: log_options() 'min_rating_enabled = False'
+INFO: 2020-12-15 13:25:31,719: log_options() 'min_size = 80'
+INFO: 2020-12-15 13:25:31,720: log_options() 'min_size_enabled = True'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quota_enabled = True'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quota_size = 1000'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_authors = '
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_bg_opacity = 55'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_change_enabled = False'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_change_interval = 300'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_disabled_sources = ['Urban Dictionary']'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_enabled = False'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_favorites_file = /home/user/.config/variety/favorite_quotes.txt'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_hpos = 100'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_max_length = 250'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_tags = '
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_text_shadow = False'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_vpos = 40'
+INFO: 2020-12-15 13:25:31,720: log_options() 'quotes_width = 70'
+INFO: 2020-12-15 13:25:31,720: log_options() 'safe_mode = False'
+INFO: 2020-12-15 13:25:31,720: log_options() 'slideshow_custom_enabled = False'
+INFO: 2020-12-15 13:25:31,720: log_options() 'slideshow_custom_folder = /home/user/Pictures'
+INFO: 2020-12-15 13:25:31,720: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2020-12-15 13:25:31,720: log_options() 'slideshow_fade = 0.4'
+INFO: 2020-12-15 13:25:31,720: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2020-12-15 13:25:31,720: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2020-12-15 13:25:31,720: log_options() 'slideshow_monitor = All'
+INFO: 2020-12-15 13:25:31,720: log_options() 'slideshow_pan = 0.05'
+INFO: 2020-12-15 13:25:31,720: log_options() 'slideshow_seconds = 6.0'
+INFO: 2020-12-15 13:25:31,721: log_options() 'slideshow_sort_order = Random'
+INFO: 2020-12-15 13:25:31,721: log_options() 'slideshow_sources_enabled = True'
+INFO: 2020-12-15 13:25:31,721: log_options() 'slideshow_zoom = 0.2'
+INFO: 2020-12-15 13:25:31,721: log_options() 'smart_enabled = False'
+INFO: 2020-12-15 13:25:31,721: log_options() 'smart_notice_shown = False'
+INFO: 2020-12-15 13:25:31,721: log_options() 'smart_register_shown = False'
+INFO: 2020-12-15 13:25:31,721: log_options() 'sources = [[True, 'favorites', 'The Favorites folder'], [False, 'fetched', 'The Fetched folder'], [True, 'folder', '/usr/share/backgrounds'], [False, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [False, 'apod', "NASA's Astronomy Picture of the Day"], [False, 'bing', 'Bing Photo of the Day'], [False, 'earthview', 'Google Earth View Wallpapers'], [False, 'unsplash', 'High-resolution photos from Unsplash.com']]'
+INFO: 2020-12-15 13:25:31,721: log_options() 'stats_enabled = True'
+INFO: 2020-12-15 13:25:31,721: log_options() 'stats_notice_shown = False'
+INFO: 2020-12-15 13:25:31,721: log_options() 'sync_enabled = True'
+INFO: 2020-12-15 13:25:31,721: log_options() 'use_landscape_enabled = True'
+INFO: 2020-12-15 13:25:31,721: reload_config() 'No need to clear prepared queue'
+INFO: 2020-12-15 13:25:31,721: update_indicator() 'Setting file info to: /usr/share/backgrounds/gnome/adwaita-timed.xml'
+INFO: 2020-12-15 13:25:31,742: load_last_change_time() 'Change interval < 6 hours, ignore persisted last_change_time, wait initially the whole interval: 300'
+INFO: 2020-12-15 13:25:31,742: update_indicator() 'Setting file info to: /usr/share/backgrounds/gnome/adwaita-timed.xml'
+INFO: 2020-12-15 13:25:31,743: regular_change_thread() 'regular_change thread running'
+INFO: 2020-12-15 13:25:31,744: regular_change_thread() 'regular_change: waiting till user resumes'
+INFO: 2020-12-15 13:25:31,744: prepare_thread() 'Prepare thread running'
+INFO: 2020-12-15 13:25:31,745: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2020-12-15 13:25:31,745: prepare_thread() 'Preparing some images'
+INFO: 2020-12-15 13:25:31,750: update_indicator_icon() 'Creating indicator'
+WARNING: 2020-12-15 13:25:31,771: create_menu() 'Variety Slideshow is not installed. This is an optional extension adding pan-and-zoom slideshows to Variety: see https://github.com/peterlevi/variety-slideshow for details'
+INFO: 2020-12-15 13:25:31,772: create_indicator() 'indicator backend: AppIndicator3'
+INFO: 2020-12-15 13:25:31,791: set_from_theme_icon() 'Showing indicator icon variety-indicator from GTK theme'
+INFO: 2020-12-15 13:25:31,792: process_command() 'Received command: ['-p']'
+INFO: 2020-12-15 13:25:31,794: process_command() 'Received command: ['-p']'
+INFO: 2020-12-15 13:25:31,842: do_set_wp() 'Calling do_set_wp with /usr/share/backgrounds/gnome/adwaita-timed.xml, time: 1608056731.8428547'
+INFO: 2020-12-15 13:25:31,843: do_set_wp() 'Missing file or bad permissions, will not use it: /usr/share/backgrounds/gnome/adwaita-timed.xml'
+INFO: 2020-12-15 13:25:31,953: prepare_thread() 'After search prepared buffer contains 18 images'
+INFO: 2020-12-15 13:25:33,039: reload() 'Reloading preferences dialog'
+INFO: 2020-12-15 13:25:33,954: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2020-12-15 13:25:51,763: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-12-15 13:25:51,806: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f897c2b3670>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f897c2b3670>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f897c2b3670>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO: 2020-12-15 13:26:21,813: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-12-15 13:26:21,819: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f897c2b3880>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f897c2b3880>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f897c2b3880>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+INFO: 2020-12-15 13:26:51,851: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-12-15 13:26:56,932: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f897c2b3b80>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f897c2b3b80>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f897c2b3b80>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+INFO: 2020-12-15 13:27:26,964: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-12-15 13:27:31,977: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f897c2b3e80>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f897c2b3e80>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f897c2b3e80>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+INFO: 2020-12-15 13:28:02,008: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2020-12-15 13:28:07,020: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 670, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f8968411670>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 439, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8968411670>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1086, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 644, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 614, in request
+    r = requests.request(
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8968411670>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
