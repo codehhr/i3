@@ -74,7 +74,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id st
-bindsym $mod1+Return exec --no-startup-id alacritty
+bindsym $mod1+Return exec --no-startup-id alacritty;split toggle
 for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
 
 #用st启动ranger文件管理器
