@@ -9,7 +9,7 @@ new_window pixel 2
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-# smart_borders on
+smart_borders on
 
 #窗口间缝隙
 gaps inner 2
@@ -74,8 +74,8 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id st
-bindsym $mod1+Return exec --no-startup-id alacritty
-for_window [class="st"] floating enable resize set 1680 700,move right -360px,move down -50px
+bindsym $mod1+Return exec --no-startup-id alacritty;split toggle
+for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
 
 #用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
@@ -153,6 +153,9 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# orientation for new workspaces
+default_orientation horizontal
+
 # split in horizontal orientation
 bindsym $mod+h split h
 
@@ -223,7 +226,20 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+# exit i3 without any msg
 bindsym $mod1+Shift+e exec "i3-msg exit"
+
+# 调整亮度
+bindsym $mod1+1 exec "xrandr --output eDP-1 --brightness 0.1"
+bindsym $mod1+2 exec "xrandr --output eDP-1 --brightness 0.2"
+bindsym $mod1+3 exec "xrandr --output eDP-1 --brightness 0.3"
+bindsym $mod1+4 exec "xrandr --output eDP-1 --brightness 0.4"
+bindsym $mod1+5 exec "xrandr --output eDP-1 --brightness 0.5"
+bindsym $mod1+6 exec "xrandr --output eDP-1 --brightness 0.6"
+bindsym $mod1+7 exec "xrandr --output eDP-1 --brightness 0.7"
+bindsym $mod1+8 exec "xrandr --output eDP-1 --brightness 0.8"
+bindsym $mod1+9 exec "xrandr --output eDP-1 --brightness 0.9"
+bindsym $mod1+0 exec "xrandr --output eDP-1 --brightness 1.0"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -297,10 +313,18 @@ mode "$mode_gaps_outer" {
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#bar {
-#	colors {
-#	background #494f5c
-#}
-#	position bottom
-#    status_command i3status
-#}
+# bar {
+#     status_command i3status
+#     position bottom
+#     colors {
+#         background #2F2F2F
+#         statusline #eeeeee
+#         separator  #666666
+#     
+#         # colorclass           border  backgr. text
+#         focused_workspace     #a9a9a9 #5f676a #eeeeee
+#         active_workspace      #a9a9a9 #5f676a #a9a9a9
+#         inactive_workspace    #a9a9a9 #5f676a #a9a9a9
+#         urgent_workspace      #a9a9a9 #e82951 #FFFFFF
+#     }
+# }
