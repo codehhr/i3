@@ -16,6 +16,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+"行高亮
 set cursorline
 
 set autoindent
