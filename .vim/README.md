@@ -38,3 +38,9 @@ nvim ~/.config/nvim/bundle/Vundle.vim/autoload/vundle.vim
 # 应该是在第 84 行,改成 nvim 对应的路径
 let vundle#bundle_dir = expand('$HOME/.config/nvim/bundle',1)
 ```
+
+## 3.自动安装插件
+
+```bash
+:BundleInstall
+```
