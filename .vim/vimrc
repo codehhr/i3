@@ -60,6 +60,8 @@ let g:NERDTreeHidden=0
 
 set nocompatible
 filetype off
+
+"设置包括vundle和初始化相关的运行时路径
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
