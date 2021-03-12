@@ -21,10 +21,12 @@
 ;background = ${xrdb:color0:#222}
 background = #66000000
 background-alt = #222
+
 i3numbg  = #F3E2A9
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #d2b48c
+
 primary = #ffb52a
 secondary = #daaaff
 alert = #bd2c40
@@ -46,7 +48,7 @@ line-size = 0
 line-color = #ffffff
 
 border-size = 0
-border-top = 4
+border-top = 1
 border-left = 0
 border-color = #00000000
 
@@ -84,6 +86,7 @@ type = internal/xwindow
 #label-margin-left = 50%
 label-padding-left = 68%
 label = T i t l e  |    %title:0:30:...%
+
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -317,32 +320,32 @@ ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 
-[module/powermenu]
-type = custom/menu
-expand-right = true
-
-format-spacing = 1
-
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close =  cancel
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = reboot
-menu-0-0-exec = reboot
-menu-0-1 = power off
-menu-0-1-exec = poweroff
+# [module/powermenu]
+# type = custom/menu
+# expand-right = true
+# 
+# format-spacing = 1
+# 
+# label-open = 
+# label-open-foreground = ${colors.secondary}
+# label-close =  cancel
+# label-close-foreground = ${colors.secondary}
+# label-separator = |
+# label-separator-foreground = ${colors.foreground-alt}
+# 
+# menu-0-0 = reboot
+# menu-0-0-exec = reboot
+# menu-0-1 = power off
+# menu-0-1-exec = poweroff
 
 
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
+# compositing-background = screen
+# compositing-foreground = source
+# compositing-border = over
+# pseudo-transparency = false
 
 [global/wm]
 margin-top = 5

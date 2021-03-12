@@ -77,45 +77,44 @@ bindsym $mod+Return exec --no-startup-id st
 bindsym $mod1+Return exec --no-startup-id alacritty;split toggle
 for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
 
-#用st启动ranger文件管理器
+# 用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
 bindsym $mod+shift+n exec st -e sudo ranger
 
-#用alacritty启动ranger文件管理器
+# 用alacritty启动ranger文件管理器
 bindsym $mod1+n exec alacritty -e ranger
 bindsym $mod1+shift+n exec alacritty -e sudo ranger
 
 
-#chromium浏览器
+# google-chrome浏览器
 bindsym ctrl+shift+m exec --no-startup-id chromium
 
-#deepin-QQ
+# deepin-QQ
 bindsym $mod+p exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
 
-#i3锁屏
+# i3lock-fancy锁屏
 bindsym ctrl+$mod1+l exec --no-startup-id i3lock-fancy
 
-#网易云音乐
+# 网易云音乐
 bindsym ctrl+shift+u exec --no-startup-id netease-cloud-music
 
-#把网易云默认安排到第四个桌面
+# 把网易云默认安排到第四个桌面
 assign [class="netease-cloud-music"] $ws4
 
-#KDE的文件管理器，挺好用
+# KDE的文件管理器，挺好用
 bindsym $mod+shift+d exec --no-startup-id dolphin
 
-#截图
+# 截图
 bindsym $mod+shift+s exec --no-startup-id flameshot gui
+# bindsym $mod+shift+s --release exec /usr/bin/flameshot gui
 
-#bindsym $mod+shift+s --release exec /usr/bin/flameshot gui
-
-#录屏软件
+# 录屏软件
 bindsym $mod+ctrl+r exec --no-startup-id simplescreenrecorder
 
-#KDE系统设置，因为我预装的KDE
+# KDE系统设置，因为我预装的KDE
 bindsym ctrl+shift+k exec --no-startup-id systemsettings5
 
-#类似于dmenu的一个东西
+# 类似于dmenu的一个东西
 bindsym $mod+o exec --no-startup-id rofi -show run
 
 # kill focused window
