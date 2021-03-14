@@ -74,8 +74,10 @@ floating_modifier $mod
 
 # open st (simpleTerminal)
 bindsym $mod+Return exec --no-startup-id st
+
 # open alacritty
 bindsym $mod1+Return exec --no-startup-id alacritty;split toggle
+
 # simpleTerminal floating enable
 for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
 
