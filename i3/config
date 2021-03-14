@@ -72,7 +72,6 @@ exec --no-startup-id nm-applet
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
 # open st (simpleTerminal)
 bindsym $mod+Return exec --no-startup-id st
 # open alacritty
