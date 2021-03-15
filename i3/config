@@ -72,14 +72,10 @@ exec --no-startup-id nm-applet
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# open st (simpleTerminal)
+# start a terminal
 bindsym $mod+Return exec --no-startup-id st
-
-# open alacritty
 bindsym $mod1+Return exec --no-startup-id alacritty;split toggle
-
-# simpleTerminal floating enable
-for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
+# for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
 
 # 用st启动ranger文件管理器
 bindsym $mod+n exec st -e ranger
@@ -91,10 +87,13 @@ bindsym $mod1+shift+n exec alacritty -e sudo ranger
 
 
 # google-chrome浏览器
-bindsym ctrl+shift+m exec --no-startup-id chromium
+bindsym ctrl+shift+m exec --no-startup-id google-chrome-stable
 
 # deepin-QQ
-bindsym $mod+p exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
+bindsym $mod+t exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
+
+# deepin-WeChat
+bindsym $mod+w exec --no-startup-id /opt/deepinwine/apps/Deepin-WeChat/run.sh
 
 # i3lock-fancy锁屏
 bindsym ctrl+$mod1+l exec --no-startup-id i3lock-fancy
