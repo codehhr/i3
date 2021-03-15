@@ -90,10 +90,10 @@ bindsym $mod1+shift+n exec alacritty -e sudo ranger
 bindsym ctrl+shift+m exec --no-startup-id google-chrome-stable
 
 # deepin-QQ
-bindsym $mod+t exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
+bindsym $mod+shift+t exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
 
 # deepin-WeChat
-bindsym $mod+w exec --no-startup-id /opt/deepinwine/apps/Deepin-WeChat/run.sh
+bindsym $mod+shift+w exec --no-startup-id /opt/deepinwine/apps/Deepin-WeChat/run.sh
 
 # i3lock-fancy锁屏
 bindsym ctrl+$mod1+l exec --no-startup-id i3lock-fancy
