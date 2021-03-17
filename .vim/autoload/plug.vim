@@ -769,7 +769,7 @@ function! s:infer_properties(name, repo)
       if repo !~ '/'
         throw printf('Invalid argument: %s (implicit `vim-scripts'' expansion is deprecated)', repo)
       endif
-      let fmt = get(g:, 'plug_url_format', 'https://git::@github.com/%s.git')
+      let fmt = get(g:, 'plug_url_format', 'https://git::@github.com.cnpmjs.org/%s.git')
       let uri = printf(fmt, repo)
     endif
     return { 'dir': s:dirpath(g:plug_home.'/'.a:name), 'uri': uri }

@@ -44,6 +44,8 @@ map gc :terminal<CR>
 "打开文件
 map e :edit<space>
 
+"打开 lazygit
+
 "=========================vim 配色======================================= 
 "语法高亮
 syntax enable  
