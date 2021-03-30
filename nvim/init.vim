@@ -433,6 +433,21 @@ nmap <silent> <F9> <Plug>StopMarkdownPreview
 "插入模式
 imap <silent> <F9> <Plug>StopMarkdownPreview 
 
+"缩进采用的是两个空格=================vim-vue====================================
+au BufNewFile,BufRead *.html,*.js,*.vue set tabstop=2
+
+au BufNewFile,BufRead *.html,*.js,*.vue set softtabstop=2
+
+au BufNewFile,BufRead *.html,*.js,*.vue set shiftwidth=2
+
+au BufNewFile,BufRead *.html,*.js,*.vue set expandtab
+
+au BufNewFile,BufRead *.html,*.js,*.vue set autoindent
+
+au BufNewFile,BufRead *.html,*.js,*.vue set fileformat=unix
+
+"=====================vim-emmet==============================================
+let g:user_emmet_expandabbr_key = '<C-e>'
 
 "==================================vim-plug========================================
 
@@ -478,7 +493,10 @@ Plug 'iamcco/markdown-preview.vim'
 "如果需要预览数学公式，还需要安装 mathjax-support-for-mkdp 插件
 Plug 'iamcco/mathjax-support-for-mkdp'
 
-Plug 'puremourning/vimspector'
+"vue 语法高亮
+Plug 'posva/vim-vue'
+
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
