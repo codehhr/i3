@@ -15,7 +15,7 @@ smart_borders on
 gaps inner 2
 
 #窗口外边距
-gaps outer 20
+gaps outer 40
 
 #启动polybar脚本，要提前'chmod+x'
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -56,7 +56,7 @@ font pango:ttf-liberation-mono 14
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -73,7 +73,7 @@ exec --no-startup-id nm-applet
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id st
+bindsym $mod+Return exec --no-startup-id st;split toggle
 bindsym $mod1+Return exec --no-startup-id alacritty;split toggle
 # for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
 
@@ -96,7 +96,7 @@ bindsym $mod+shift+t exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
 bindsym $mod+shift+w exec --no-startup-id /opt/deepinwine/apps/Deepin-WeChat/run.sh
 
 # i3lock-fancy锁屏
-bindsym ctrl+$mod1+l exec --no-startup-id i3lock-fancy
+# bindsym ctrl+$mod1+l exec --no-startup-id i3lock-fancy
 
 # 网易云音乐
 bindsym ctrl+shift+u exec --no-startup-id netease-cloud-music
@@ -114,11 +114,11 @@ bindsym $mod+shift+s exec --no-startup-id flameshot gui
 # 录屏软件
 bindsym $mod+ctrl+r exec --no-startup-id simplescreenrecorder
 
-# KDE系统设置，因为我预装的KDE
+# KDE系统设置，因为我预装的KDE,设置蓝牙WIFI挺方便的,就懒得每次敲命令连网了
 bindsym ctrl+shift+k exec --no-startup-id systemsettings5
 
 # 类似于dmenu的一个东西
-bindsym $mod+o exec --no-startup-id rofi -show run
+bindsym $mod+o exec --no-startup-id rofi -show run 
 
 # kill focused window
 bindsym $mod+q kill
@@ -231,7 +231,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # exit i3 without any msg
 bindsym $mod1+Shift+e exec "i3-msg exit"
 
-# 调整亮度
+# 调整亮度(非常方便哈哈)
 bindsym $mod1+1 exec "xrandr --output eDP-1 --brightness 0.1"
 bindsym $mod1+2 exec "xrandr --output eDP-1 --brightness 0.2"
 bindsym $mod1+3 exec "xrandr --output eDP-1 --brightness 0.3"
