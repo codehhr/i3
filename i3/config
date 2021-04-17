@@ -17,7 +17,7 @@ gaps inner 2
 #窗口外边距
 gaps outer 40
 
-#启动polybar脚本，要提前'chmod+x'
+#启动polybar脚本，要加可执行权限 (chmod+x)
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 #窗口渲染器
@@ -56,7 +56,7 @@ font pango:ttf-liberation-mono 14
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
