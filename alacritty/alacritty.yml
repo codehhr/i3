@@ -96,115 +96,59 @@ dynamic_padding: false
 # change the `it` value in terminfo when altering this setting.
 #tabspaces: 8
 
-# Font configuration
+# Font configuration (changes require restart)
 font:
-  # Normal (roman) font face
-  #normal:
-  # Font family
-  #
-  # Default:
-  #  - (macOS) Menlo
-  #  - (Linux/BSD) monospace
-  #  - (Windows) Consolas
-  #family: Hack
+  # The size to use.
+  size: 12
+  # The normal (roman) font face to use.
+  normal:
+    family: WenQuanYi Micro Hei Mono
+    # Style can be specified to pick a specific face.
+    style: Regular
 
-  # The `style` can be specified to pick a specific face.
-  #style: Regular
+  # The bold font face
+  bold:
+    family:  JetBrainsMono Nerd Font
+   # Style can be specified to pick a specific face.
+    # style: Bold
 
-  # Bold font face
-  #bold:
-  # Font family
-  #
-  # If the bold family is not specified, it will fall back to the
-  # value specified for the normal font.
-  #family: monospace
+  # The italic font face
+  italic:
+    family:  JetBrainsMono Nerd Font
+   # Style can be specified to pick a specific face.
+    # style: Italic
+# 輸入中文的bug
+# key_bindings:
+#   - { key: Back, action:  ReceiveChar}
 
-  # The `style` can be specified to pick a specific face.
-  #style: Bold
-
-  # Italic font face
-  #italic:
-  # Font family
-  #
-  # If the italic family is not specified, it will fall back to the
-  # value specified for the normal font.
-  #family: monospace
-
-  # The `style` can be specified to pick a specific face.
-  #style: Italic
-
-  # Bold italic font face
-  #bold_italic:
-  # Font family
-  #
-  # If the bold italic family is not specified, it will fall back to the
-  # value specified for the normal font.
-  #family: monospace
-
-  # The `style` can be specified to pick a specific face.
-  #style: Bold Italic
-
-  #Point size
-  size: 16
-
-  # Offset is the extra space around each character. `offset.y` can be thought of
-  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
-  #offset:
-  #  x: 0
-  #  y: 0
-  # Glyph offset determines the locations of the glyphs within their cells with
-  # the default being at the bottom. Increasing `x` moves the glyph to the right,
-  # increasing `y` moves the glyph upwards.
-  #glyph_offset:
-  #  x: 0
-  #  y: 0
-  # Thin stroke font rendering (macOS only)
-  #
-  # Thin strokes are suitable for retina displays, but for non-retina screens
-  # it is recommended to set `use_thin_strokes` to `false`
-  #
-  # macOS >= 10.14.x:
-  #
-  # If the font quality on non-retina display looks bad then set
-  # `use_thin_strokes` to `true` and enable font smoothing by running the
-  # following command:
-  #   `defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO`
-  #
-  # This is a global setting and will require a log out or restart to take
-  # effect.
-  #use_thin_strokes: true
-
-# If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
-
-# Colors (Snazzy)
+# Colors (Monokai Dark)
 colors:
   # Default colors
   primary:
-    background: "#282a36"
-    foreground: "#f8f8f2"
+    background: '#272822'
+    foreground: '#F8F8F2'
 
   # Normal colors
   normal:
-    black: "#282a36"
-    red: "#666699"
-    green: "#ffffaf"
-    yellow: "#f3f99d"
-    blue: "#57c7ff"
-    magenta: "#ff6ac1"
-    cyan: "#9aedfe"
-    white: "#f1f1f0"
+   black:   '#272822'
+   red:     '#F92672'
+   green:   '#A6E22E'
+   yellow:  '#F4BF75'
+   blue:    '#66D9EF'
+   magenta: '#AE81FF'
+   cyan:    '#A1EFE4'
+   white:   '#F8F8F2'
 
   # Bright colors
   bright:
-    black: "#686868"
-    red: "#ff5c57"
-    green: "#5af78e"
-    yellow: "#f3f99d"
-    blue: "#57c7ff"
-    magenta: "#ff6ac1"
-    cyan: "#9aedfe"
-    white: "#f1f1f0"
+   black:   '#75715E'
+   red:     '#F92672'
+   green:   '#A6E22E'
+   yellow:  '#F4BF75'
+   blue:    '#66D9EF'
+   magenta: '#AE81FF'
+   cyan:    '#A1EFE4'
+   white:   '#F9F8F5'
 
 # Indexed Colors
 #
