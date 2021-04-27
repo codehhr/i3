@@ -18,15 +18,16 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
+; background = ${xrdb:color0:#222}
 ; background = #66000000
-background = #888888aa
+background = #52525263
 background-alt = #222
 
-i3numbg  = #F3E2A9
-;foreground = ${xrdb:color7:#222}
+i3numbg  = #f3e2a9
+; foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
-foreground-alt = #d2b48c
+; foreground-alt = #d2b48c
+foreground-alt = #f3e2a9
 
 primary = #ffb52a
 secondary = #daaaff
@@ -35,6 +36,7 @@ alert = #bd2c40
 [bar/barA]
 monitor = ${env:MONITOR:eDP-1}
 width = 96%
+; width = 100%
 height = 18
 ;offset-x = 1%
 ;offset-y = 1%
@@ -49,9 +51,11 @@ line-size = 0
 ; line-color = #ffffff
 
 border-size = 0
-border-top = 10
+border-top = 20
+; border-top = 0
 ; left = (100% - length)/2
 border-left = 3%
+; border-left = 0
 border-color = #00000000
 
 padding-left = 1

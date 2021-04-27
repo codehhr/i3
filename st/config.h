@@ -6,7 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "WenQuanYi Micro Hei Mono:pixelsize=20:antialias=true:autohint=true";
-static int borderpx = 20;
+// static int borderpx = 20;
+static int borderpx = 14;
 
 /*
  * What program is execed by st depends of these precedence rules:
