@@ -20,7 +20,8 @@
 [colors]
 ; background = ${xrdb:color0:#222}
 ; background = #66000000
-background = #52525263
+; background = #52525263
+background = #888888aa
 background-alt = #222
 
 i3numbg  = #f3e2a9
