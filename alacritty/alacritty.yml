@@ -99,7 +99,7 @@ dynamic_padding: false
 # Font configuration (changes require restart)
 font:
   # The size to use.
-  size: 12
+  size: 18
   # The normal (roman) font face to use.
   normal:
     family: WenQuanYi Micro Hei Mono
