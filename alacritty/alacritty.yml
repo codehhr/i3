@@ -99,22 +99,23 @@ dynamic_padding: false
 # Font configuration (changes require restart)
 font:
   # The size to use.
-  size: 18
+  size: 16
   # The normal (roman) font face to use.
   normal:
-    family: WenQuanYi Micro Hei Mono
+    # family: WenQuanYi Micro Hei Mono
+    family: JetBrainsMono Nerd Font
     # Style can be specified to pick a specific face.
-    style: Regular
+    # style: Regular
 
   # The bold font face
   bold:
-    family:  JetBrainsMono Nerd Font
+    family: JetBrainsMono Nerd Font
    # Style can be specified to pick a specific face.
     # style: Bold
 
   # The italic font face
   italic:
-    family:  JetBrainsMono Nerd Font
+    family: JetBrainsMono Nerd Font
    # Style can be specified to pick a specific face.
     # style: Italic
 # 輸入中文的bug
@@ -190,7 +191,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.88
+background_opacity: 0.82
 #selection:
 #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
