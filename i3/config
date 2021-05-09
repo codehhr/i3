@@ -88,7 +88,6 @@ bindsym $mod+shift+n exec st -e sudo ranger
 bindsym $mod1+n exec alacritty -e ranger
 bindsym $mod1+shift+n exec alacritty -e sudo ranger
 
-
 # google-chrome浏览器
 bindsym ctrl+shift+m exec --no-startup-id google-chrome-stable
 
@@ -96,19 +95,22 @@ bindsym ctrl+shift+m exec --no-startup-id google-chrome-stable
 bindsym $mod+shift+t exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
 
 # com.qq.weixin.spark
-bindsym $mod+shift+w exec --no-startup-id /opt/apps/com.qq.weixin.spark/files/run.sh
+bindsym $mod+shift+w exec --no-startup-id /opt/wechat-uos/wechat
 
 # i3lock-fancy锁屏
 bindsym ctrl+$mod1+l exec --no-startup-id i3lock-fancy
 
 # 网易云音乐
-bindsym ctrl+shift+u exec --no-startup-id netease-cloud-music
+bindsym $mod+u exec --no-startup-id netease-cloud-music
 
 # 把网易云默认安排到第四个桌面
 assign [class="netease-cloud-music"] $ws4
 
 # KDE的文件管理器，挺好用
 bindsym $mod+shift+d exec --no-startup-id dolphin
+
+# 主要是为了使用 KDE 的 EmojiSelector ,用 krunner 启动就是kde的窗口管理版,从终端启动效果不一样
+bindsym $mod1+space exec --no-startup-id krunner
 
 # 截图
 bindsym $mod+shift+s exec --no-startup-id flameshot gui
@@ -232,16 +234,16 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod1+Shift+e exec "i3-msg exit"
 
 # 调整亮度(非常方便哈哈)
-bindsym $mod1+1 exec "xrandr --output eDP-1 --brightness 0.1"
-bindsym $mod1+2 exec "xrandr --output eDP-1 --brightness 0.2"
-bindsym $mod1+3 exec "xrandr --output eDP-1 --brightness 0.3"
-bindsym $mod1+4 exec "xrandr --output eDP-1 --brightness 0.4"
-bindsym $mod1+5 exec "xrandr --output eDP-1 --brightness 0.5"
-bindsym $mod1+6 exec "xrandr --output eDP-1 --brightness 0.6"
-bindsym $mod1+7 exec "xrandr --output eDP-1 --brightness 0.7"
-bindsym $mod1+8 exec "xrandr --output eDP-1 --brightness 0.8"
-bindsym $mod1+9 exec "xrandr --output eDP-1 --brightness 0.9"
-bindsym $mod1+0 exec "xrandr --output eDP-1 --brightness 1.0"
+bindsym $mod1+1 exec "xrandr --output eDP-1-1 --brightness 0.1"
+bindsym $mod1+2 exec "xrandr --output eDP-1-1 --brightness 0.2"
+bindsym $mod1+3 exec "xrandr --output eDP-1-1 --brightness 0.3"
+bindsym $mod1+4 exec "xrandr --output eDP-1-1 --brightness 0.4"
+bindsym $mod1+5 exec "xrandr --output eDP-1-1 --brightness 0.5"
+bindsym $mod1+6 exec "xrandr --output eDP-1-1 --brightness 0.6"
+bindsym $mod1+7 exec "xrandr --output eDP-1-1 --brightness 0.7"
+bindsym $mod1+8 exec "xrandr --output eDP-1-1 --brightness 0.8"
+bindsym $mod1+9 exec "xrandr --output eDP-1-1 --brightness 0.9"
+bindsym $mod1+0 exec "xrandr --output eDP-1-1 --brightness 1.0"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
