@@ -38,7 +38,7 @@ padding:
   y: 16
 
 # Spread additional padding evenly around the terminal content.
-dynamic_padding: false
+dynamic_padding: true
 
 # Window decorations
 #
@@ -133,7 +133,7 @@ colors:
   normal:
    black:   '#000000'
    red:     '#c0c0ff'
-   green:   '#bd93f9'
+   green:   '#fab8fa'
    yellow:  '#f1fa8c'
    blue:    '#bd93f9'
    magenta: '#ff79c6'
@@ -145,7 +145,7 @@ colors:
    black:   '#44475a'
    red:     '#ffbbff'
    green:   '#FFBBFF'
-   yellow:  '#f1fa8c'
+   yEllow:  '#f1fa8c'
    blue:    '#bd93f9'
    magenta: '#ff79c6'
    cyan:    '#8be9fd'
