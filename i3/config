@@ -76,17 +76,17 @@ exec --no-startup-id nm-applet
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id st;split toggle
-bindsym $mod1+Return exec --no-startup-id alacritty;split toggle
-# for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
+bindsym $mod+Return exec --no-startup-id alacritty;split toggle
+bindsym $mod1+Return exec --no-startup-id st;split toggle
+for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
 
 # 用st启动ranger文件管理器
-bindsym $mod+n exec st -e ranger
-bindsym $mod+shift+n exec st -e sudo ranger
+bindsym $mod+n exec alacritty -e ranger
+bindsym $mod+shift+n exec alacritty -e sudo ranger
 
 # 用alacritty启动ranger文件管理器
-bindsym $mod1+n exec alacritty -e ranger
-bindsym $mod1+shift+n exec alacritty -e sudo ranger
+bindsym $mod1+n exec st -e ranger
+bindsym $mod1+shift+n exec st -e sudo ranger
 
 # google-chrome浏览器
 bindsym ctrl+shift+m exec --no-startup-id google-chrome-stable
