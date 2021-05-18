@@ -102,8 +102,8 @@ font:
   size: 16
   # The normal (roman) font face to use.
   normal:
-    family: Source Code Pro
-    # family: WenQuanYi Micro Hei Mono
+    family: WenQuanYi Micro Hei Mono
+    # family: Source Code Pro
     # Style can be specified to pick a specific face.
     style: Regular
 
