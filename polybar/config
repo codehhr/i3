@@ -35,7 +35,7 @@ secondary = #daaaff
 alert = #bd2c40
 
 [bar/barA]
-monitor = ${env:MONITOR:eDP-1}
+monitor = ${env:MONITOR:eDP-1-1}
 ; width = 96%
 width = 100%
 height = 18

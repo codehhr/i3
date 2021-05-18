@@ -30,6 +30,9 @@ exec_always --no-startup-id variety
 #中文输入法
 exec_always --no-startup-id fcitx5
 
+# qv2ray
+exec_always --no-startup-id qv2ray
+
 # 双显卡切换工具( 需安装 nvidia bbswitch optimus-manager-qt , 编译工具应该在base-debel包里)
 exec_always --no-startup-id optimus-manager-qt
 
@@ -282,6 +285,9 @@ set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 bindsym $mod+Shift+i mode "$mode_gaps_inner"
 bindsym $mod+Shift+o mode "$mode_gaps_outer"
+
+# reset i3 gaps 
+bindsym $mod1+Shift+0 gaps inner current set 2;gaps outer current set 50
 
 mode "$mode_gaps" {
         bindsym o      mode "$mode_gaps_outer"
