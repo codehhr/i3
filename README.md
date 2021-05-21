@@ -6,9 +6,9 @@
 
 ### 效果图
 
+![i3](https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/archscreenshotc.png)
 ![i3](https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/archscreenshota.png)
 ![i3](https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/archscreenshotb.png)
-![i3](https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/archscreenshotc.png)
 ![i3](https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/archscreenshotd.png)
 ![i3](https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/i3.png)
 ![i3](https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/i3/i3girl.png)
