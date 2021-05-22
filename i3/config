@@ -15,7 +15,7 @@ smart_borders on
 gaps inner 2
 
 #窗口外边距
-gaps outer 50
+gaps outer 40
 
 #启动polybar脚本，第一次要加可执行权限 (chmod+x)
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -236,7 +236,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # exit i3 without any msg
 bindsym $mod1+Shift+e exec "i3-msg exit"
 
-# 调整亮度(非常方便哈哈)
+# 调整亮度( alt 1~0, 非常方便哈哈)
+# 你可以在终端输入 xrandr --output 然后按 tab 查看你接的哪个显示器
+# 默认可能是 eDP-1 ,我开了 nvidia,然后他就变成了 eDP-1-1
+# 相应处更改
 bindsym $mod1+1 exec "xrandr --output eDP-1-1 --brightness 0.1"
 bindsym $mod1+2 exec "xrandr --output eDP-1-1 --brightness 0.2"
 bindsym $mod1+3 exec "xrandr --output eDP-1-1 --brightness 0.3"
