@@ -12,7 +12,7 @@ new_window pixel 2
 smart_borders on
 
 #窗口间缝隙
-gaps inner 2
+gaps inner 0
 
 #窗口外边距
 gaps outer 40
