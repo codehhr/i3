@@ -15,7 +15,7 @@ smart_borders on
 gaps inner 0
 
 #窗口外边距
-gaps outer 40
+gaps outer 0
 
 #启动polybar脚本，第一次要加可执行权限 (chmod+x)
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -109,8 +109,8 @@ bindsym $mod+u exec --no-startup-id netease-cloud-music
 # 把网易云默认安排到第四个桌面
 assign [class="netease-cloud-music"] $ws4
 
-# KDE的文件管理器，挺好用
-bindsym $mod+shift+d exec --no-startup-id dolphin
+# KDE的文件管理器，挺好用,$mod+e和 layout toggle 冲突,改用 $mod1
+bindsym $mod1+e exec --no-startup-id dolphin
 
 # 主要是为了使用 KDE 的 EmojiSelector ,用 krunner 启动就是kde的窗口管理版,从终端启动效果不一样
 bindsym $mod1+space exec --no-startup-id krunner
