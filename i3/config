@@ -112,15 +112,18 @@ assign [class="netease-cloud-music"] $ws4
 # KDE的文件管理器 pcmanfm ，挺好用, $mod+e 和 layout toggle 冲突,改用 $mod1+e
 bindsym $mod1+e exec --no-startup-id pcmanfm
 
-# 主要是为了使用 KDE 的 EmojiSelector ,用 krunner 启动就是kde的窗口管理版,从终端启动效果不一样
+# 
 bindsym $mod1+space exec --no-startup-id krunner
 
 # 截图
 bindsym $mod+shift+s exec --no-startup-id flameshot gui
 # bindsym $mod+shift+s --release exec /usr/bin/flameshot gui
 
-# KDE系统设置，因为我预装的KDE,设置蓝牙WIFI挺方便的,就懒得每次敲命令连网了
+# KDE的系统设置，因为我预装的KDE,设置蓝牙WIFI挺方便的,就懒得每次敲命令连网了
 bindsym ctrl+shift+k exec --no-startup-id systemsettings5
+
+# blueberry ; 蓝牙,挺好用
+bindsym $mod+shift+b exec --no-startup-id blueberry
 
 # 类似于dmenu的一个东西
 bindsym $mod+o exec --no-startup-id rofi -show run 
