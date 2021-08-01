@@ -81,7 +81,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty;split toggle
 bindsym $mod1+Return exec --no-startup-id st;split toggle
-for_window [class="st"] floating enable resize set 1480 600,move right -270px,move down -50px
+for_window [class="st"] floating enable resize set 1480 620,move right -220px,move down -20px
 
 # 用st启动ranger文件管理器
 bindsym $mod+n exec alacritty -e ranger
@@ -98,10 +98,10 @@ bindsym ctrl+shift+m exec --no-startup-id google-chrome-stable
 bindsym $mod+shift+t exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
 
 # com.qq.weixin.spark
-bindsym $mod+shift+w exec --no-startup-id /opt/wechat-uos/wechat
+bindsym $mod+shift+w exec --no-startup-id /usr/bin/wechat-uos
 
 # i3lock-fancy锁屏
-bindsym ctrl+$mod1+l exec --no-startup-id i3lock-fancy
+bindsym ctrl+$mod+l exec --no-startup-id i3lock-fancy
 
 # 网易云音乐
 bindsym $mod+u exec --no-startup-id netease-cloud-music
@@ -142,8 +142,9 @@ bindsym $mod+b exec --no-startup-id i3-dmenu-desktop
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+i focus up
+bindsym $mod+l focus right
+# bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -152,10 +153,11 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+# bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -293,7 +295,7 @@ bindsym $mod+Shift+i mode "$mode_gaps_inner"
 bindsym $mod+Shift+o mode "$mode_gaps_outer"
 
 # reset i3 gaps 
-bindsym $mod1+Shift+0 gaps inner current set 2;gaps outer current set 50
+bindsym ctrl+Shift+0 gaps inner current set 2;gaps outer current set 0
 
 mode "$mode_gaps" {
         bindsym o      mode "$mode_gaps_outer"
