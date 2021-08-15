@@ -1,10 +1,10 @@
-# 1. i3 的配置文件
+# 1. i3wm 的配置文件
 
-#### (1) `polybar` 需要安装的字体 ( 图标字体 ) :
+## (1) `polybar` 需要安装的字体 ( 图标字体 ) :
 
-`ttf-liberation` ( 这个你系统可能自带 ) 、`ttf-font-awesome`或者`otf-font-awesome` ( 具体看配置文件,应该是一个 `FontAwesome`(后者) 字体就够了 )
+`ttf-liberation` ( 这个你系统可能自带 ) 、`ttf-font-awesome`或者`otf-font-awesome` ( 具体看配置文件,应该是一个 `FontAwesome` 字体就够了 )
 
-#### (2) 如果`polybar`不能正常显示
+### (2) 如果`polybar`不能正常显示
 
 可能是显示器配置错了,应该在`polybar/config`的第 38 行左右,有句
 
