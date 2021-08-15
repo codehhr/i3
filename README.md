@@ -1,6 +1,6 @@
 # 1. i3 的配置文件
 
-#### (1) `polybar` 需要安装的字体:
+#### (1) `polybar` 需要安装的字体 ( 图标字体 ) :
 
 `ttf-liberation` ( 这个你系统可能自带 ) 、`ttf-font-awesome`或者`otf-font-awesome` ( 具体看配置文件,应该是一个 `FontAwesome`(后者) 字体就够了 )
 
