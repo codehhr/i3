@@ -8,7 +8,7 @@
 // static char *font = "WenQuanYi Micro Hei Mono:pixelsize=22:antialias=true:autohint=true";
 static char *font = "Source Code Pro:pixelsize=22:antialias=true:autohint=true";
 // static int borderpx = 20;
-static int borderpx = 14;
+static int borderpx = 10;
 
 /*
  * What program is execed by st depends of these precedence rules:
