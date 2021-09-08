@@ -7,15 +7,16 @@
 #窗口边框
 new_window pixel 2
 
+# 单窗口无边框
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+smart_borders no_gaps
 
 #窗口间缝隙
 gaps inner 0
 
 #窗口外边距
-gaps outer 0
+gaps outer 20
 
 #启动polybar脚本，第一次要加可执行权限 (chmod+x)
 exec_always --no-startup-id ~/.config/polybar/launch.sh
