@@ -1,5 +1,7 @@
 # 1. i3wm 的配置文件
 
+**把 `alacritty`, `i3`, `picom`, `polybar` 放在当前用户的 `.config` 目录下**
+
 ## 1.1 `polybar`
 
 ### (1) `polybar` 需要安装的字体 ( 图标字体 ) :
@@ -30,6 +32,14 @@ monitor = ${env:MONITOR:eDP-1-1}
 cd st/
 sudo make clean install
 ```
+
+## 1.3 `alacritty`
+
+`alacritty terminal`
+
+## 1.4 `picom`
+
+一个窗口渲染工具, 可实现窗口半透明
 
 # 2. 键位绑定说明
 
