@@ -1,10 +1,12 @@
 # 1. i3wm 的配置文件
 
-## (1) `polybar` 需要安装的字体 ( 图标字体 ) :
+## 1.1 `polybar`
+
+### (1) `polybar` 需要安装的字体 ( 图标字体 ) :
 
 `ttf-liberation` ( 这个你系统可能自带 ) 、`ttf-font-awesome`或者`otf-font-awesome` ( 具体看配置文件 , 应该是一个 `FontAwesome` 字体就够了 , 我装的是 `otf-font-awesome`  )
 
-```bash
+```sh
 sudo pacman -S otf-font-awesome
 ```
 
@@ -12,13 +14,22 @@ sudo pacman -S otf-font-awesome
 
 可能是显示器配置错了 , 应该在 `polybar/config` 的第 38 行左右,有句是
 
-```bash
+```sh
 monitor = ${env:MONITOR:eDP-1-1}
 ```
 
 把 `eDP-1-1` 改成你接的显示器 , 然后重新启动 `polybar` 就行了  
 
 你可以在终端输入 `xrandr --output` 然后按 `tab` 查看你接的哪个显示器 , 默认可能是 `eDP-1`  , 因为我开了 `nvidia` , 所以显示的是 `eDP-1-1`
+
+## 1.2 `st`
+
+`simple terminal` , 前提得有 `make` 和 `gcc`
+
+```sh
+cd st/
+sudo make clean install
+```
 
 # 2. 键位绑定说明
 
