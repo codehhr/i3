@@ -79,8 +79,10 @@ exec --no-startup-id nm-applet
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal (simple terminal)
+# start a terminal
+# alacritty terminal
 bindsym $mod+Return exec --no-startup-id alacritty;split toggle;focus
+# st (simple terminal)
 bindsym $mod1+Return exec --no-startup-id st;split toggle;focus
 for_window [class="st"] floating enable resize set 1480 620,move right -220px,move down -20px;split toggle;focus
 
