@@ -32,7 +32,7 @@ exec_always --no-startup-id variety
 exec_always --no-startup-id fcitx5
 
 # qv2ray
-exec_always --no-startup-id qv2ray
+# exec_always --no-startup-id qv2ray
 
 # 双显卡切换工具( 需安装 nvidia bbswitch optimus-manager-qt , 编译工具应该在base-debel包里)
 exec_always --no-startup-id optimus-manager-qt
@@ -79,12 +79,20 @@ exec --no-startup-id nm-applet
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty;split toggle
-bindsym $mod1+Return exec --no-startup-id st;split toggle
-for_window [class="st"] floating enable resize set 1480 620,move right -220px,move down -20px
+# start a terminal 
+# alacritty terminal
+bindsym $mod+Return exec --no-startup-id alacritty;split toggle;focus
+# st (simple terminal)
+bindsym $mod1+Return exec --no-startup-id st;split toggle;focus
+for_window [class="st"] floating enable resize set 1480 620,move right -220px,move down -20px;split toggle;focus
 
-# 用st启动ranger文件管理器
+# open my i3 config file
+bindsym $mod1+i exec st -e vim ~/.config/i3/config
+
+# open my nvimrc
+bindsym $mod1+m exec st -e vim ~/.config/nvim/init.vim
+
+# 用 alacritty 启动ranger文件管理器
 bindsym $mod+n exec alacritty -e ranger
 bindsym $mod+shift+n exec alacritty -e sudo ranger
 
@@ -107,7 +115,7 @@ bindsym ctrl+$mod+l exec --no-startup-id i3lock-fancy
 # 网易云音乐
 bindsym $mod+u exec --no-startup-id netease-cloud-music
 
-# 把网易云默认安排到第 8 个桌面, 8 在 u 上面,直接 $mod+u,8 一气呵成
+# 把网易云默认安排到第 8 个桌面, 8 在 u 上面,直接 $mod+u+8 一气呵成
 assign [class="netease-cloud-music"] $ws8
 
 # KDE的文件管理器 pcmanfm ，挺好用, $mod+e 和 layout toggle 冲突,改用 $mod1+e
@@ -122,9 +130,6 @@ bindsym $mod+shift+s exec --no-startup-id flameshot gui
 
 # KDE的系统设置，因为我预装的KDE,设置蓝牙WIFI挺方便的,就懒得每次敲命令连网了
 bindsym ctrl+shift+k exec --no-startup-id systemsettings5
-
-# blueberry ; 蓝牙,挺好用
-bindsym $mod+shift+b exec --no-startup-id blueberry
 
 # 类似于dmenu的一个东西
 bindsym $mod+o exec --no-startup-id rofi -show run 
@@ -265,16 +270,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+        bindsym j resize shrink width 1 px or 1 ppt
+        bindsym k resize grow height 1 px or 1 ppt
+        bindsym l resize shrink height 1 px or 1 ppt
+        bindsym semicolon resize grow width 1 px or 1 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 5 px or 5 ppt
-        bindsym Down resize grow height 5 px or 5 ppt
-        bindsym Up resize shrink height 5 px or 5 ppt
-        bindsym Right resize grow width 5 px or 5 ppt
+        bindsym Left resize shrink width 1 px or 1 ppt
+        bindsym Down resize grow height 1 px or 1 ppt
+        bindsym Up resize shrink height 1 px or 1 ppt
+        bindsym Right resize grow width 1 px or 1 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -335,7 +340,7 @@ mode "$mode_gaps_outer" {
 #
 # Window color settings
 # class						border  backgr. text indicator
-client.focused				#6790EB #6790EB #e5e5e5 #6790EB 
+client.focused				#6790EB #6790EB #e5e5e5 #6790EB
 client.unfocused			#222222 #222222 #aaaaaa #222222
 client.focused_inactive		#222222 #222222 #a9a9a9 #222222
 client.placeholder			#222222 #222222 #aaaaaa #222222
