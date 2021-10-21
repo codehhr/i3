@@ -1,5 +1,7 @@
 # 1. i3wm 的配置文件
 
+前提你安装了 `alacritty`, `i3`, `picom`( 这个软件包以前应该叫`compton`), `polybar`
+
 **把 `alacritty`, `i3`, `picom`, `polybar` 放在当前用户的 `.config` 目录下**
 
 ## 1.1 `polybar`
