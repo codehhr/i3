@@ -100,6 +100,9 @@ bindsym $mod+shift+n exec alacritty -e sudo ranger
 bindsym $mod1+n exec st -e ranger
 bindsym $mod1+shift+n exec st -e sudo ranger
 
+# st open fzf
+bindsym $mod1+f exec st -e fzf
+
 # google-chrome浏览器
 bindsym ctrl+shift+m exec --no-startup-id google-chrome-stable
 
