@@ -35,9 +35,9 @@ exec_always --no-startup-id fcitx5
 # exec_always --no-startup-id qv2ray
 
 # # 双显卡切换工具( 需安装 nvidia, bbswitch, optimus-manager-qt , 编译工具应该在base-debel包里)
-# exec_always --no-startup-id optimus-manager-qt
+exec_always --no-startup-id optimus-manager-qt
 #
-# 现改用 bumblebee
+# 或者用 bumblebee
 
 # sudo pacman -S gnome-settings-daemon 用于kde,i3桌面启动QQ
 exec_always --no-startup-id /usr/lib/gsd-xsettings &
