@@ -125,7 +125,7 @@ assign [class="netease-cloud-music"] $ws8
 bindsym $mod1+e exec --no-startup-id pcmanfm
 
 # kde krunner
-bindsym $mod1+space exec --no-startup-id krunner
+# bindsym $mod1+space exec --no-startup-id krunner
 
 # flameshot 截图工具
 bindsym $mod+shift+s exec --no-startup-id flameshot gui
