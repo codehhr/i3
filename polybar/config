@@ -48,7 +48,7 @@ function = #B48EAD
 [bar/barB]
 monitor = ${env:MONITOR:eDP-1-1}
 width = 100%
-height = 20
+height = 18
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 6.0
@@ -58,7 +58,7 @@ fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
+line-size = 2
 line-color = #f00
 
 border-bottom = 0
@@ -80,9 +80,9 @@ font-3 = "Font Awesome 5 Brands:style=Regular:pixelsize=12;1"
 font-4 = "material icons:pixelsize=16;3"
 
 ;modules-left = powermenu date notify i3 upload download daily-poem
-modules-left = i3 xwindow mpd
-modules-center = mpd
-modules-right = upload download alsa filesystem xkeyboard cpu memory wlan eth battery temperature date notify
+modules-left = i3 xwindow
+;modules-center = 
+modules-right = upload download alsa filesystem xkeyboard cpu memory wlan eth battery temperature date
 
 tray-position = right
 tray-padding = 6
@@ -197,15 +197,6 @@ toggle-off-foreground = #55
 
 label-song-maxlen = 25
 label-song-ellipsis = true
-
-[module/notify]
-type = custom/text
-content = 
-content-foreground = ${colors.warning}
-content-underline = ${colors.warning}
-content-padding = 1
-
-click-left = xdotool key control+grave
 
 [module/cpu]
 type = internal/cpu
