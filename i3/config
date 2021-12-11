@@ -19,7 +19,7 @@ gaps inner 0
 gaps outer 20
 
 #启动polybar脚本，第一次要加可执行权限 (chmod+x)
-# exec_always --no-startup-id ~/.config/polybar/launch.sh
+# exec_always --no-startup-id ~/.config/polybar/useBarA.sh
 exec_always --no-startup-id ~/.config/polybar/useBarB.sh
 
 #窗口渲染器
