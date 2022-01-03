@@ -90,10 +90,10 @@ bindsym $mod1+Return exec --no-startup-id st;split toggle;focus
 for_window [class="st"] floating enable resize set 1480 620,move right -220px,move down -20px;split toggle;focus
 
 # open my i3 config file
-bindsym $mod1+i exec st -e vim ~/.config/i3/config
+bindsym $mod1+i exec st -e nvim ~/.config/i3/config
 
 # open my nvimrc
-bindsym $mod1+m exec st -e vim ~/.config/nvim/init.vim
+bindsym $mod1+m exec st -e nvim ~/.config/nvim/init.vim
 
 # 用 alacritty 启动ranger文件管理器
 bindsym $mod+n exec alacritty -e ranger
