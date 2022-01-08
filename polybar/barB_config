@@ -177,26 +177,26 @@ label-urgent-padding = 2
 ; Separator in between workspaces
 ; label-separator = |
 
-[module/mpd]
-type = internal/mpd
-format-online =  <icon-prev>  <icon-stop>  <toggle>  <icon-next>  <icon-repeat>  <icon-single>  <icon-random> <label-song>
-
-label-offline = mpd is offline
-
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
-icon-repeat = 
-icon-single = ↻
-icon-random = 
-
-toggle-on-foreground = #ff
-toggle-off-foreground = #55
-
-label-song-maxlen = 25
-label-song-ellipsis = true
+;[module/mpd]
+;type = internal/mpd
+;format-online =  <icon-prev>  <icon-stop>  <toggle>  <icon-next>  <icon-repeat>  <icon-single>  <icon-random> <label-song>
+;
+;label-offline = mpd is offline
+;
+;icon-prev = 
+;icon-stop = 
+;icon-play = 
+;icon-pause = 
+;icon-next = 
+;icon-repeat = 
+;icon-single = ↻
+;icon-random = 
+;
+;toggle-on-foreground = #ff
+;toggle-off-foreground = #55
+;
+;label-song-maxlen = 25
+;label-song-ellipsis = true
 
 [module/cpu]
 type = internal/cpu
@@ -374,19 +374,18 @@ ramp-1 = 
 ramp-2 =     
 ramp-foreground = ${colors.foreground}
 
-[module/powermenu]
-type = custom/menu
-expand-right = true
-
-format-spacing = 1
-
-label-open = "  "
-label-open-foreground = ${colors.secondary}
-label-close = "   取消"
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
+;[module/powermenu]
+;type = custom/menu
+;expand-right = true
+;
+;format-spacing = 1
+;
+;label-open = "  "
+;label-open-foreground = ${colors.secondary}
+;label-close = "   取消"
+;label-close-foreground = ${colors.secondary}
+;label-separator = |
+;label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = 关机
 menu-0-0-exec = poweroff

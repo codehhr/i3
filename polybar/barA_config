@@ -209,6 +209,7 @@ ramp-signal-underline-2 = ${colors.nord7}
 
 ramp-signal-foreground-3 = ${colors.success}
 ramp-signal-underline-3 = ${colors.success}
+
 [module/date]
 type = internal/date
 interval = 5

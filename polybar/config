@@ -79,7 +79,7 @@ font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12;1"
 font-3 = "Font Awesome 5 Brands:style=Regular:pixelsize=12;1"
 font-4 = "material icons:pixelsize=16;3"
 
-;modules-left = powermenu date notify i3 upload download daily-poem
+;modules-left = powermenu date notify i3 upload download
 modules-left = i3 xwindow
 ;modules-center = 
 modules-right = upload download alsa filesystem xkeyboard cpu memory wlan eth battery temperature date
@@ -406,27 +406,3 @@ screenchange-reload = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
-[module/daily-poem]
-type = custom/ipc
-
-# replace IDZJPFP9nkjOfsJ5KJO98E4Tgu3DbFHh with your token from https://v2.jinrishici.com/token.
-hook-0 = ~/.config/polybar/scripts/daily-poem require vU1whWzAS7pqAHRkvTD9KxF757ZXcfwS ~/.config/polybar/scripts/poem.txt
-hook-1 = ~/.config/polybar/scripts/daily-poem get ~/.config/polybar/scripts/poem.txt content 
-hook-2 = ~/.config/polybar/scripts/daily-poem get ~/.config/polybar/scripts/poem.txt origin
-hook-3 = ~/.config/polybar/scripts/daily-poem get ~/.config/polybar/scripts/poem.txt match
-
-initial = 1
-
-click-left = polybar-msg -p %pid% hook daily-poem 2
-scroll-up = polybar-msg -p %pid% hook daily-poem 3
-scroll-down = polybar-msg -p %pid% hook daily-poem 4
-click-right = polybar-msg -p %pid% hook daily-poem 1
-
-[module/weather]
-type = custom/script
-exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
-interval = 600
-
-label-font = 4
-label-padding-left = 32%
