@@ -8,10 +8,17 @@
 
 ### (1) `polybar` 需要安装的字体 ( 图标字体 ) :
 
-`ttf-liberation` ( 这个你系统可能自带 ) 、`ttf-font-awesome`或者`otf-font-awesome` ( 具体看配置文件 , 应该是一个 `FontAwesome` 字体就够了 , 我装的是 `otf-font-awesome`  )
+`ttf-liberation` ( 这个你系统可能自带 ) 、`ttf-font-awesome`或者`otf-font-awesome`
+具体看配置文件 , 应该是一个 `FontAwesome` 字体就够了 , 我装的是 `otf-font-awesome`
 
 ```sh
 sudo pacman -S otf-font-awesome
+```
+
+如果还不能显示图标, 那就安装 `FontAwesome 5`, pacman 里好像没有, 在 `AUR` 里安装的
+
+```sh
+yay -S ttf-font-awesome-5
 ```
 
 ### (2) 如果`polybar`不能正常显示
