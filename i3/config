@@ -13,7 +13,7 @@ new_window pixel 2
 smart_borders no_gaps
 
 #窗口间缝隙
-gaps inner 0
+gaps inner 4
 
 #窗口外边距
 gaps outer 20
@@ -96,12 +96,12 @@ bindsym $mod1+i exec st -e nvim ~/.config/i3/config
 bindsym $mod1+m exec st -e nvim ~/.config/nvim/init.vim
 
 # 用 alacritty 启动ranger文件管理器
-bindsym $mod+n exec alacritty -e ranger
-bindsym $mod+shift+n exec alacritty -e sudo ranger
+bindsym $mod+n exec alacritty -e ranger;split toggle;focus
+bindsym $mod+shift+n exec alacritty -e sudo ranger;split toggle;focus
 
 # 用alacritty启动ranger文件管理器
-bindsym $mod1+n exec st -e ranger
-bindsym $mod1+shift+n exec st -e sudo ranger
+bindsym $mod1+n exec st -e ranger;split toggle;focus
+bindsym $mod1+shift+n exec st -e sudo ranger;split toggle;focus
 
 # google-chrome浏览器
 bindsym ctrl+shift+m exec --no-startup-id google-chrome-stable
@@ -278,16 +278,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 1 px or 1 ppt
-        bindsym k resize grow height 1 px or 1 ppt
-        bindsym l resize shrink height 1 px or 1 ppt
-        bindsym semicolon resize grow width 1 px or 1 ppt
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 1 px or 1 ppt
-        bindsym Down resize grow height 1 px or 1 ppt
-        bindsym Up resize shrink height 1 px or 1 ppt
-        bindsym Right resize grow width 1 px or 1 ppt
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
