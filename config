@@ -5,7 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 #窗口边框
-new_window pixel 2
+default_border pixel 1
 
 # 单窗口无边框
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
@@ -13,14 +13,13 @@ new_window pixel 2
 smart_borders no_gaps
 
 #窗口间缝隙
-gaps inner 4
+gaps inner 2
 
 #窗口外边距
-gaps outer 20
+gaps outer 1
 
 #启动polybar脚本，第一次要加可执行权限 (chmod+x)
-# exec_always --no-startup-id ~/.config/polybar/useBarA.sh
-exec_always --no-startup-id ~/.config/polybar/useBarB.sh
+exec_always --no-startup-id ~/.config/polybar/useBarA.sh
 
 #窗口渲染器
 exec_always --no-startup-id picom -b
@@ -87,7 +86,7 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id alacritty;split toggle;focus
 # st (simple terminal)
 bindsym $mod1+Return exec --no-startup-id st;split toggle;focus
-for_window [class="st"] floating enable resize set 1480 620,move right -220px,move down -20px;split toggle;focus
+for_window [class="st"] floating enable resize set 1480 640,move right -220px,move down -20px;split toggle;focus
 
 # open my i3 config file
 bindsym $mod1+i exec st -e nvim ~/.config/i3/config
@@ -113,7 +112,7 @@ bindsym $mod+shift+t exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
 bindsym $mod+shift+w exec --no-startup-id /usr/bin/wechat-uos
 
 # i3lock-fancy锁屏
-bindsym ctrl+$mod+l exec --no-startup-id i3lock-fancy
+bindsym $mod+shift+l exec --no-startup-id i3lock-fancy
 
 # 网易云音乐
 bindsym $mod+u exec --no-startup-id netease-cloud-music
@@ -122,7 +121,7 @@ bindsym $mod+u exec --no-startup-id netease-cloud-music
 assign [class="netease-cloud-music"] $ws8
 
 # KDE的文件管理器 pcmanfm ，挺好用, $mod+e 和 layout toggle 冲突,改用 $mod1+e
-bindsym $mod1+e exec --no-startup-id pcmanfm
+bindsym $mod1+e exec --no-startup-id dolphin
 
 # kde krunner
 # bindsym $mod1+space exec --no-startup-id krunner
@@ -132,10 +131,10 @@ bindsym $mod+shift+s exec --no-startup-id flameshot gui
 # bindsym $mod+shift+s --release exec /usr/bin/flameshot gui
 
 # KDE的系统设置，因为我预装的KDE,设置蓝牙WIFI挺方便的,就懒得每次敲命令连网了
-bindsym ctrl+shift+k exec --no-startup-id systemsettings5
+bindsym ctrl+shift+k exec --no-startup-id systemsettings
 
 # 类似于 dmenu 的一个东西
-bindsym $mod+o exec --no-startup-id rofi -show run 
+bindsym $mod+o exec --no-startup-id rofi -show drun -show-icons
 
 # kill focused window
 bindsym $mod+q kill
@@ -259,16 +258,16 @@ bindsym $mod1+Shift+e exec "i3-msg exit"
 # 你可以在终端输入 xrandr --output 然后按 tab 查看你接的哪个显示器
 # 默认可能是 eDP-1 ,我开了 nvidia,然后他就变成了 eDP-1-1
 # 相应处更改
-bindsym $mod1+1 exec "xrandr --output eDP-1-1 --brightness 0.1"
-bindsym $mod1+2 exec "xrandr --output eDP-1-1 --brightness 0.2"
-bindsym $mod1+3 exec "xrandr --output eDP-1-1 --brightness 0.3"
-bindsym $mod1+4 exec "xrandr --output eDP-1-1 --brightness 0.4"
-bindsym $mod1+5 exec "xrandr --output eDP-1-1 --brightness 0.5"
-bindsym $mod1+6 exec "xrandr --output eDP-1-1 --brightness 0.6"
-bindsym $mod1+7 exec "xrandr --output eDP-1-1 --brightness 0.7"
-bindsym $mod1+8 exec "xrandr --output eDP-1-1 --brightness 0.8"
-bindsym $mod1+9 exec "xrandr --output eDP-1-1 --brightness 0.9"
-bindsym $mod1+0 exec "xrandr --output eDP-1-1 --brightness 1.0"
+bindsym $mod1+1 exec "xrandr --output eDP1 --brightness 0.1"
+bindsym $mod1+2 exec "xrandr --output eDP1 --brightness 0.2"
+bindsym $mod1+3 exec "xrandr --output eDP1 --brightness 0.3"
+bindsym $mod1+4 exec "xrandr --output eDP1 --brightness 0.4"
+bindsym $mod1+5 exec "xrandr --output eDP1 --brightness 0.5"
+bindsym $mod1+6 exec "xrandr --output eDP1 --brightness 0.6"
+bindsym $mod1+7 exec "xrandr --output eDP1 --brightness 0.7"
+bindsym $mod1+8 exec "xrandr --output eDP1 --brightness 0.8"
+bindsym $mod1+9 exec "xrandr --output eDP1 --brightness 0.9"
+bindsym $mod1+0 exec "xrandr --output eDP1 --brightness 1.0"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -300,7 +299,7 @@ bindsym $mod+r mode "resize"
 
 
 # i3-gaps
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
