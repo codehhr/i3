@@ -23,24 +23,15 @@ exec_always --no-startup-id ~/.config/polybar/useBarA.sh
 
 #窗口渲染器
 exec_always --no-startup-id picom -b
-#exec_always --no-startup-id xcompmgr &
 
 #壁纸
-exec_always --no-startup-id variety
+exec --no-startup-id variety
 
 #中文输入法
-exec_always --no-startup-id fcitx5
+exec --no-startup-id fcitx5
 
-# qv2ray
-# exec_always --no-startup-id qv2ray
-
-# # 双显卡切换工具( 需安装 nvidia, bbswitch, optimus-manager-qt , 编译工具应该在base-debel包里)
-exec_always --no-startup-id optimus-manager-qt
-#
-# 或者用 bumblebee
-
-# sudo pacman -S gnome-settings-daemon 用于kde,i3桌面启动QQ
-exec_always --no-startup-id /usr/lib/gsd-xsettings &
+# 双显卡切换工具( 需安装 nvidia, bbswitch, optimus-manager-qt , 编译工具应该在base-debel包里)
+exec --no-startup-id optimus-manager-qt
 
 # i3 config file (v4)
 #
@@ -121,7 +112,9 @@ bindsym $mod+u exec --no-startup-id netease-cloud-music
 assign [class="netease-cloud-music"] $ws8
 
 # KDE的文件管理器 pcmanfm ，挺好用, $mod+e 和 layout toggle 冲突,改用 $mod1+e
-bindsym $mod1+e exec --no-startup-id dolphin
+# bindsym $mod1+e exec --no-startup-id dolphin
+# bindsym $mod1+e exec --no-startup-id nautilus
+bindsym $mod1+e exec --no-startup-id pcmanfm
 
 # kde krunner
 # bindsym $mod1+space exec --no-startup-id krunner
@@ -365,7 +358,7 @@ client.background			#242424
 #         background #2F2F2F
 #         statusline #eeeeee
 #         separator  #666666
-#     
+#
 #         # colorclass           border  backgr. text
 #         focused_workspace     #a9a9a9 #5f676a #eeeeee
 #         active_workspace      #a9a9a9 #5f676a #a9a9a9
