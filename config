@@ -77,7 +77,7 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id alacritty;split toggle;focus
 # st (simple terminal)
 bindsym $mod1+Return exec --no-startup-id st;split toggle;focus
-for_window [class="st"] floating enable resize set 1480 640,move right -220px,move down -20px;split toggle;focus
+for_window [class="st"] floating enable resize set 1480 640,move right -220px,move down -20px
 
 # open my i3 config file
 bindsym $mod1+i exec st -e nvim ~/.config/i3/config
