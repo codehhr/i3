@@ -103,7 +103,7 @@ bindsym $mod+shift+t exec --no-startup-id /opt/deepinwine/apps/Deepin-TIM/run.sh
 bindsym $mod+shift+w exec --no-startup-id /usr/bin/wechat-uos
 
 # i3lock-fancy锁屏
-bindsym $mod+shift+l exec --no-startup-id i3lock-fancy
+bindsym ctrl+$mod+l exec --no-startup-id i3lock-fancy
 
 # 网易云音乐
 bindsym $mod+u exec --no-startup-id netease-cloud-music
@@ -140,12 +140,12 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # installed.
 bindsym $mod+b exec --no-startup-id i3-dmenu-desktop
 # change focus
-#	i
-# j	  l
 #	k
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+i focus up
+# ;	  l
+#	j
+bindsym $mod+semicolon focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
 bindsym $mod+l focus right
 # bindsym $mod+semicolon focus right
 
@@ -162,7 +162,7 @@ bindsym $mod+Right focus right
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+l move right
 # bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
