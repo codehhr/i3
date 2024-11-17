@@ -105,6 +105,9 @@ bindsym $mod+shift+w exec --no-startup-id /usr/bin/wechat-uos
 # i3lock-fancy锁屏
 bindsym ctrl+$mod+l exec --no-startup-id i3lock-fancy
 
+bindsym ctrl+$mod+u exec qvidcap
+for_window [class="qvidcap"] floating enable
+
 # 网易云音乐
 bindsym $mod+u exec --no-startup-id netease-cloud-music
 
